@@ -1,0 +1,207 @@
+Release 12.1 - libgen Xilinx EDK 12.1 Build EDK_MS1.53d
+ (lin64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -mhs system.mhs -p xc4vfx20ff672-10 -msg
+__xps/ise/xmsgprops.lst system.mss 
+
+Release 12.1 - psf2Edward EDK_MS1.53d (lin64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Checking platform configuration ...
+IPNAME:plb_v46 INSTANCE:plb -
+/home/aalonso/workspace/ppc405/xilinx-ml405-ref/system.mhs line 82 - 2 master(s)
+: 13 slave(s)
+IPNAME:plb_v46 INSTANCE:ppc405_0_iplb1 -
+/home/aalonso/workspace/ppc405/xilinx-ml405-ref/system.mhs line 224 - 1
+master(s) : 1 slave(s)
+IPNAME:plb_v46 INSTANCE:ppc405_0_dplb1 -
+/home/aalonso/workspace/ppc405/xilinx-ml405-ref/system.mhs line 231 - 1
+master(s) : 1 slave(s)
+
+Checking port drivers...
+WARNING:EDK:2098 - PORT:HostMiimRdy CONNECTOR:host_mii_rdy -
+   /opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_ll_temac_v2_03
+   _a/data/xps_ll_temac_v2_1_0.mpd line 262 - No driver found. Port will be
+   driven to GND!
+WARNING:EDK:2098 - PORT:HostRdData CONNECTOR:host_rd_data -
+   /opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_ll_temac_v2_03
+   _a/data/xps_ll_temac_v2_1_0.mpd line 263 - No driver found. Port will be
+   driven to GND!
+WARNING:EDK:2099 - PORT:HostMiimSel CONNECTOR:host_mii_sel -
+   /opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_ll_temac_v2_03
+   _a/data/xps_ll_temac_v2_1_0.mpd line 264 - floating connection!
+WARNING:EDK:2099 - PORT:HostReq CONNECTOR:host_req -
+   /opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_ll_temac_v2_03
+   _a/data/xps_ll_temac_v2_1_0.mpd line 265 - floating connection!
+WARNING:EDK:2099 - PORT:HostAddr CONNECTOR:host_addr -
+   /opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_ll_temac_v2_03
+   _a/data/xps_ll_temac_v2_1_0.mpd line 266 - floating connection!
+WARNING:EDK:2099 - PORT:HostEmac1Sel CONNECTOR:host_emac1_sel -
+   /opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_ll_temac_v2_03
+   _a/data/xps_ll_temac_v2_1_0.mpd line 267 - floating connection!
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+WARNING:EDK:1557 - IPNAME:ppc405_virtex4 INSTANCE:ppc405_0 -
+   /home/aalonso/workspace/ppc405/xilinx-ml405-ref/system.mhs line 68 -
+   PARAMETER C_FASTEST_PLB_CLOCK has value DPLB1 specified in MHS, but tcl is
+   overriding the value to DPLB0
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+Conversion to XML complete.
+WARNING:EDK:453 - /home/aalonso/workspace/ppc405/xilinx-ml405-ref/system.mss
+   line 105 - PARAMETER CLOCK_HZ is deprecated !. .
+   To avoid seeing this Warning again, please remove PARAMETER CLOCK_HZ.
+
+-- Generating libraries for processor: ppc405_0 --
+
+
+Staging source files.
+Running DRCs.
+#--------------------------------------
+# device-tree BSP DRC...!
+#--------------------------------------
+Running generate.
+#--------------------------------------
+# device-tree BSP generate...
+#--------------------------------------
+--- device tree generator version: v1.3 ---
+generating xilinx.dts
+Clock Port Summary:
+ppc405_0.CPMC405CLOCK connected to clk_300_0000MHzDCM0:
+    CLK_FREQ_HZ = 300000000
+ppc405_0.IPLB0_PLB_Clk connected to clk_100_0000MHzDCM0:
+    CLK_FREQ_HZ = 100000000
+ppc405_0.DPLB0_PLB_Clk connected to clk_100_0000MHzDCM0:
+    CLK_FREQ_HZ = 100000000
+ppc405_0.IPLB1_PLB_Clk connected to clk_100_0000MHzDCM0:
+    CLK_FREQ_HZ = 100000000
+ppc405_0.DPLB1_PLB_Clk connected to clk_100_0000MHzDCM0:
+    CLK_FREQ_HZ = 100000000
+plb.PLB_Clk connected to clk_100_0000MHzDCM0:
+    CLK_FREQ_HZ = 100000000
+xps_bram_if_cntlr_1.SPLB_Clk connected to clk_100_0000MHzDCM0:
+    CLK_FREQ_HZ = 100000000
+plb_bram_if_cntlr_1_bram.BRAM_Clk_A connected to
+xps_bram_if_cntlr_1_port_BRAM_Clk:
+    CLK_FREQ_HZ = 100000000
+LEDs_4Bit.SPLB_Clk connected to clk_100_0000MHzDCM0:
+    CLK_FREQ_HZ = 100000000
+LEDs_Positions.SPLB_Clk connected to clk_100_0000MHzDCM0:
+    CLK_FREQ_HZ = 100000000
+Push_Buttons_Position.SPLB_Clk connected to clk_100_0000MHzDCM0:
+    CLK_FREQ_HZ = 100000000
+IIC_EEPROM.SPLB_Clk connected to clk_100_0000MHzDCM0:
+    CLK_FREQ_HZ = 100000000
+SysACE_CompactFlash.SPLB_Clk connected to clk_100_0000MHzDCM0:
+    CLK_FREQ_HZ = 100000000
+DDR_SDRAM.SDMA2_Clk connected to clk_100_0000MHzDCM0:
+    CLK_FREQ_HZ = 100000000
+DDR_SDRAM.MPMC_Clk0 connected to clk_100_0000MHzDCM0:
+    CLK_FREQ_HZ = 100000000
+DDR_SDRAM.MPMC_Clk90 connected to clk_100_0000MHz90DCM0:
+    CLK_FREQ_HZ = 100000000
+DDR_SDRAM.MPMC_Clk_200MHz connected to clk_200_0000MHz:
+    CLK_FREQ_HZ = 200000000
+DDR_SDRAM.DDR_Clk connected to fpga_0_DDR_SDRAM_DDR_Clk_pin:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+    CLK_INPORT = 
+    CLK_FACTOR = 
+DDR_SDRAM.DDR_Clk_n connected to fpga_0_DDR_SDRAM_DDR_Clk_n_pin:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+    CLK_INPORT = 
+    CLK_FACTOR = 
+DDR_SDRAM.SPLB0_Clk connected to clk_100_0000MHzDCM0:
+    CLK_FREQ_HZ = 100000000
+DDR_SDRAM.SPLB1_Clk connected to clk_100_0000MHzDCM0:
+    CLK_FREQ_HZ = 100000000
+DDR_SDRAM.SDMA_CTRL2_Clk connected to clk_100_0000MHzDCM0:
+    CLK_FREQ_HZ = 100000000
+ppc405_0_iplb1.PLB_Clk connected to clk_100_0000MHzDCM0:
+    CLK_FREQ_HZ = 100000000
+ppc405_0_dplb1.PLB_Clk connected to clk_100_0000MHzDCM0:
+    CLK_FREQ_HZ = 100000000
+TriMode_MAC_GMII.GTX_CLK_0 connected to clk_125_0000MHz:
+    CLK_FREQ_HZ = 125000000
+TriMode_MAC_GMII.REFCLK connected to clk_200_0000MHz:
+    CLK_FREQ_HZ = 200000000
+TriMode_MAC_GMII.LlinkTemac0_CLK connected to clk_100_0000MHzDCM0:
+    CLK_FREQ_HZ = 100000000
+TriMode_MAC_GMII.SPLB_Clk connected to clk_100_0000MHzDCM0:
+    CLK_FREQ_HZ = 100000000
+FLASH.RdClk connected to clk_100_0000MHzDCM0:
+    CLK_FREQ_HZ = 100000000
+FLASH.MCH_SPLB_Clk connected to clk_100_0000MHzDCM0:
+    CLK_FREQ_HZ = 100000000
+xps_timebase_wdt_0.SPLB_Clk connected to clk_100_0000MHzDCM0:
+    CLK_FREQ_HZ = 100000000
+xps_timer_0.SPLB_Clk connected to clk_100_0000MHzDCM0:
+    CLK_FREQ_HZ = 100000000
+RS232_Uart.SPLB_Clk connected to clk_100_0000MHzDCM0:
+    CLK_FREQ_HZ = 100000000
+clock_generator_0.CLKIN connected to dcm_clk_s:
+    CLK_FREQ_HZ = 100000000
+clock_generator_0.CLKOUT0 connected to clk_100_0000MHz90DCM0:
+    CLK_FREQ_HZ = 100000000
+    CLK_INPORT = 
+    CLK_FACTOR = 
+clock_generator_0.CLKOUT1 connected to clk_100_0000MHzDCM0:
+    CLK_FREQ_HZ = 100000000
+    CLK_INPORT = 
+    CLK_FACTOR = 
+clock_generator_0.CLKOUT2 connected to clk_125_0000MHz:
+    CLK_FREQ_HZ = 125000000
+    CLK_INPORT = 
+    CLK_FACTOR = 
+clock_generator_0.CLKOUT3 connected to clk_200_0000MHz:
+    CLK_FREQ_HZ = 200000000
+    CLK_INPORT = 
+    CLK_FACTOR = 
+clock_generator_0.CLKOUT4 connected to clk_300_0000MHzDCM0:
+    CLK_FREQ_HZ = 300000000
+    CLK_INPORT = 
+    CLK_FACTOR = 
+proc_sys_reset_0.Slowest_sync_clk connected to clk_100_0000MHzDCM0:
+    CLK_FREQ_HZ = 100000000
+xps_intc_0.SPLB_Clk connected to clk_100_0000MHzDCM0:
+    CLK_FREQ_HZ = 100000000
+Clock Frequency: 300000000
+IP connected to bus: plb
+-master DPLB0 plb ppc405_0
+-master IPLB0 plb ppc405_0
+-slave SPLB plb xps_bram_if_cntlr_1
+-slave SPLB plb LEDs_4Bit
+-slave SPLB plb LEDs_Positions
+-slave SPLB plb Push_Buttons_Position
+-slave SPLB plb IIC_EEPROM
+-slave SPLB plb SysACE_CompactFlash
+-slave SDMA_CTRL2 plb DDR_SDRAM
+-slave SPLB plb TriMode_MAC_GMII
+-slave SPLB plb FLASH
+-slave SPLB plb xps_timebase_wdt_0
+-slave SPLB plb xps_timer_0
+-slave SPLB plb RS232_Uart
+-slave SPLB plb xps_intc_0
+WARNING:EDK - : Bank 0 of EMC core FLASH is used in asynchronous mode.  We
+   assume this core is connected to a flash memory, although in some older
+   designs this configuration may have been used to interface to a peripheral. 
+   Current design recommendations suggest using an EPC core to interface to such
+   peripherals.
+
+IP connected to bus: ppc405_0_dplb1
+-master DPLB1 ppc405_0_dplb1 ppc405_0
+-slave SPLB1 ppc405_0_dplb1 DDR_SDRAM
+Running post_generate.
+Running execs_generate.

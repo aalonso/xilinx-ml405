@@ -1,0 +1,720 @@
+Release 12.1 - xst M.53d (lin64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> 
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "ppc405_0_dplb1_wrapper_xst.prj"
+Verilog Include Directory          : {"/home/aalonso/workspace/ppc405/xilinx-ml405-ref/pcores/" "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/" }
+
+---- Target Parameters
+Target Device                      : xc4vfx20ff672-10
+Output File Name                   : "../implementation/ppc405_0_dplb1_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : ppc405_0_dplb1_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation/ppc405_0_dplb1_wrapper}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family_support.vhd" in Library proc_common_v3_00_a.
+Package <family_support> compiled.
+Package body <family_support> compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" in Library proc_common_v3_00_a.
+Package <proc_common_pkg> compiled.
+Package body <proc_common_pkg> compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/inferred_lut4.vhd" in Library proc_common_v3_00_a.
+Entity <inferred_lut4> compiled.
+Entity <inferred_lut4> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/muxf_struct_f.vhd" in Library proc_common_v3_00_a.
+Entity <muxf_struct> compiled.
+Entity <muxf_struct> (Architecture <imp>) compiled.
+Entity <muxf_struct_f> compiled.
+Entity <muxf_struct_f> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_bit.vhd" in Library proc_common_v3_00_a.
+Entity <pf_counter_bit> compiled.
+Entity <pf_counter_bit> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/cntr_incr_decr_addn_f.vhd" in Library proc_common_v3_00_a.
+Entity <cntr_incr_decr_addn_f> compiled.
+Entity <cntr_incr_decr_addn_f> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_f.vhd" in Library proc_common_v3_00_a.
+Entity <dynshreg_f> compiled.
+Entity <dynshreg_f> (Architecture <behavioral>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder_bit.vhd" in Library proc_common_v3_00_a.
+Entity <pf_adder_bit> compiled.
+Entity <pf_adder_bit> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter.vhd" in Library proc_common_v3_00_a.
+Entity <pf_counter> compiled.
+Entity <pf_counter> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter.vhd" in Library proc_common_v3_00_a.
+Entity <pf_occ_counter> compiled.
+Entity <pf_occ_counter> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_bit.vhd" in Library proc_common_v3_00_a.
+Entity <counter_bit> compiled.
+Entity <counter_bit> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu_f.vhd" in Library proc_common_v3_00_a.
+Entity <srl_fifo_rbu_f> compiled.
+Entity <srl_fifo_rbu_f> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family.vhd" in Library proc_common_v3_00_a.
+Package <family> compiled.
+Package body <family> compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter_top.vhd" in Library proc_common_v3_00_a.
+Entity <pf_occ_counter_top> compiled.
+Entity <pf_occ_counter_top> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_top.vhd" in Library proc_common_v3_00_a.
+Entity <pf_counter_top> compiled.
+Entity <pf_counter_top> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder.vhd" in Library proc_common_v3_00_a.
+Entity <pf_adder> compiled.
+Entity <pf_adder> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy.vhd" in Library proc_common_v3_00_a.
+Entity <or_muxcy> compiled.
+Entity <or_muxcy> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter.vhd" in Library proc_common_v3_00_a.
+Entity <Counter> compiled.
+Entity <Counter> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/coregen_comp_defs.vhd" in Library proc_common_v3_00_a.
+Package <coregen_comp_defs> compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_04_a/hdl/vhdl/qual_priority.vhd" in Library plb_v46_v1_04_a.
+Entity <qual_priority> compiled.
+Entity <qual_priority> (Architecture <qual_priority>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/common_types_pkg.vhd" in Library proc_common_v3_00_a.
+Package <Common_Types> compiled.
+WARNING:HDLParsers:3534 - "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/common_types_pkg.vhd" Line 223. In the function Get_RLOC_Name, not all control paths contain a return statement.
+Package body <Common_Types> compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/conv_funs_pkg.vhd" in Library proc_common_v3_00_a.
+Package <conv_funs_pkg> compiled.
+Package body <conv_funs_pkg> compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_pkg.vhd" in Library proc_common_v3_00_a.
+Package <ipif_pkg> compiled.
+Package body <ipif_pkg> compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/async_fifo_fg.vhd" in Library proc_common_v3_00_a.
+Entity <async_fifo_fg> compiled.
+Entity <async_fifo_fg> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/sync_fifo_fg.vhd" in Library proc_common_v3_00_a.
+Entity <sync_fifo_fg> compiled.
+Entity <sync_fifo_fg> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/addsub.vhd" in Library proc_common_v3_00_a.
+Entity <addsub> compiled.
+Entity <addsub> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/direct_path_cntr.vhd" in Library proc_common_v3_00_a.
+Entity <direct_path_cntr> compiled.
+Entity <direct_path_cntr> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/direct_path_cntr_ai.vhd" in Library proc_common_v3_00_a.
+Entity <direct_path_cntr_ai> compiled.
+Entity <direct_path_cntr_ai> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/down_counter.vhd" in Library proc_common_v3_00_a.
+Entity <down_counter> compiled.
+Entity <down_counter> (Architecture <simulation>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/eval_timer.vhd" in Library proc_common_v3_00_a.
+Entity <eval_timer> compiled.
+Entity <eval_timer> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_steer.vhd" in Library proc_common_v3_00_a.
+Entity <IPIF_Steer> compiled.
+Entity <IPIF_Steer> (Architecture <IMP>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_steer128.vhd" in Library proc_common_v3_00_a.
+Entity <ipif_steer128> compiled.
+Entity <ipif_steer128> (Architecture <IMP>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_mirror128.vhd" in Library proc_common_v3_00_a.
+Entity <ipif_mirror128> compiled.
+Entity <ipif_mirror128> (Architecture <IMP>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg.vhd" in Library proc_common_v3_00_a.
+Entity <ld_arith_reg> compiled.
+Entity <ld_arith_reg> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg2.vhd" in Library proc_common_v3_00_a.
+Entity <ld_arith_reg2> compiled.
+Entity <ld_arith_reg2> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot.vhd" in Library proc_common_v3_00_a.
+Entity <mux_onehot> compiled.
+Entity <mux_onehot> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate.vhd" in Library proc_common_v3_00_a.
+Entity <or_gate> compiled.
+Entity <or_gate> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate128.vhd" in Library proc_common_v3_00_a.
+Entity <or_gate128> compiled.
+Entity <or_gate128> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_dpram_select.vhd" in Library proc_common_v3_00_a.
+Entity <pf_dpram_select> compiled.
+Entity <pf_dpram_select> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect.vhd" in Library proc_common_v3_00_a.
+Entity <pselect> compiled.
+Entity <pselect> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_mask.vhd" in Library proc_common_v3_00_a.
+Entity <pselect_mask> compiled.
+Entity <pselect_mask> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl16_fifo.vhd" in Library proc_common_v3_00_a.
+Entity <srl16_fifo> compiled.
+Entity <srl16_fifo> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo.vhd" in Library proc_common_v3_00_a.
+Entity <SRL_FIFO> compiled.
+Entity <SRL_FIFO> (Architecture <IMP>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo2.vhd" in Library proc_common_v3_00_a.
+Entity <srl_fifo2> compiled.
+Entity <srl_fifo2> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo3.vhd" in Library proc_common_v3_00_a.
+Entity <srl_fifo3> compiled.
+Entity <srl_fifo3> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu.vhd" in Library proc_common_v3_00_a.
+Entity <srl_fifo_rbu> compiled.
+Entity <srl_fifo_rbu> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/valid_be.vhd" in Library proc_common_v3_00_a.
+Entity <valid_be> compiled.
+Entity <valid_be> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_with_enable_f.vhd" in Library proc_common_v3_00_a.
+Entity <or_with_enable_f> compiled.
+Entity <or_with_enable_f> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_i_f.vhd" in Library proc_common_v3_00_a.
+Entity <dynshreg_i_f> compiled.
+Entity <dynshreg_i_f> (Architecture <behavioral>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot_f.vhd" in Library proc_common_v3_00_a.
+Entity <mux_onehot_f> compiled.
+Entity <mux_onehot_f> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_f.vhd" in Library proc_common_v3_00_a.
+Entity <srl_fifo_f> compiled.
+Entity <srl_fifo_f> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/compare_vectors_f.vhd" in Library proc_common_v3_00_a.
+Entity <compare_vectors_f> compiled.
+Entity <compare_vectors_f> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd" in Library proc_common_v3_00_a.
+Entity <pselect_f> compiled.
+Entity <pselect_f> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" in Library proc_common_v3_00_a.
+Entity <counter_f> compiled.
+Entity <counter_f> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy_f.vhd" in Library proc_common_v3_00_a.
+Entity <or_muxcy_f> compiled.
+Entity <or_muxcy_f> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/soft_reset.vhd" in Library proc_common_v3_00_a.
+Entity <soft_reset> compiled.
+Entity <soft_reset> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_04_a/hdl/vhdl/qual_request.vhd" in Library plb_v46_v1_04_a.
+Entity <qual_request> compiled.
+Entity <qual_request> (Architecture <simulation>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_04_a/hdl/vhdl/or_bits.vhd" in Library plb_v46_v1_04_a.
+Entity <or_bits> compiled.
+Entity <or_bits> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_04_a/hdl/vhdl/priority_encoder.vhd" in Library plb_v46_v1_04_a.
+Entity <priority_encoder> compiled.
+Entity <priority_encoder> (Architecture <simulation>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_04_a/hdl/vhdl/rr_select.vhd" in Library plb_v46_v1_04_a.
+Entity <rr_select> compiled.
+Entity <rr_select> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_04_a/hdl/vhdl/pending_priority.vhd" in Library plb_v46_v1_04_a.
+Entity <pending_priority> compiled.
+Entity <pending_priority> (Architecture <simulation>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_04_a/hdl/vhdl/pend_request.vhd" in Library plb_v46_v1_04_a.
+Entity <pend_request> compiled.
+Entity <pend_request> (Architecture <simulation>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_04_a/hdl/vhdl/plb_arb_encoder.vhd" in Library plb_v46_v1_04_a.
+Entity <plb_arb_encoder> compiled.
+Entity <plb_arb_encoder> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_04_a/hdl/vhdl/arb_control_sm.vhd" in Library plb_v46_v1_04_a.
+Entity <arb_control_sm> compiled.
+Entity <arb_control_sm> (Architecture <simulation>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_04_a/hdl/vhdl/gen_qual_req.vhd" in Library plb_v46_v1_04_a.
+Entity <gen_qual_req> compiled.
+Entity <gen_qual_req> (Architecture <simulation>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_04_a/hdl/vhdl/muxed_signals.vhd" in Library plb_v46_v1_04_a.
+Entity <muxed_signals> compiled.
+Entity <muxed_signals> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_04_a/hdl/vhdl/watchdog_timer.vhd" in Library plb_v46_v1_04_a.
+Entity <watchdog_timer> compiled.
+Entity <watchdog_timer> (Architecture <simulation>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_04_a/hdl/vhdl/dcr_regs.vhd" in Library plb_v46_v1_04_a.
+Entity <dcr_regs> compiled.
+Entity <dcr_regs> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_04_a/hdl/vhdl/plb_interrupt.vhd" in Library plb_v46_v1_04_a.
+Entity <plb_interrupt> compiled.
+Entity <plb_interrupt> (Architecture <plb_interrupt>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_04_a/hdl/vhdl/or_gate.vhd" in Library plb_v46_v1_04_a.
+Entity <or_gate> compiled.
+Entity <or_gate> (Architecture <imp>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_04_a/hdl/vhdl/plb_p2p.vhd" in Library plb_v46_v1_04_a.
+Entity <plb_p2p> compiled.
+Entity <plb_p2p> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_04_a/hdl/vhdl/plb_addrpath.vhd" in Library plb_v46_v1_04_a.
+Entity <plb_addrpath> compiled.
+Entity <plb_addrpath> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_04_a/hdl/vhdl/plb_wr_datapath.vhd" in Library plb_v46_v1_04_a.
+Entity <plb_wr_datapath> compiled.
+Entity <plb_wr_datapath> (Architecture <simulation>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_04_a/hdl/vhdl/plb_rd_datapath.vhd" in Library plb_v46_v1_04_a.
+Entity <plb_rd_datapath> compiled.
+Entity <plb_rd_datapath> (Architecture <simulation>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_04_a/hdl/vhdl/plb_slave_ors.vhd" in Library plb_v46_v1_04_a.
+Entity <plb_slave_ors> compiled.
+Entity <plb_slave_ors> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_04_a/hdl/vhdl/plb_arbiter_logic.vhd" in Library plb_v46_v1_04_a.
+Entity <plb_arbiter_logic> compiled.
+Entity <plb_arbiter_logic> (Architecture <implementation>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_04_a/hdl/vhdl/plb_v46.vhd" in Library plb_v46_v1_04_a.
+Entity <plb_v46> compiled.
+Entity <plb_v46> (Architecture <simulation>) compiled.
+Compiling vhdl file "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/ppc405_0_dplb1_wrapper.vhd" in Library work.
+Entity <ppc405_0_dplb1_wrapper> compiled.
+Entity <ppc405_0_dplb1_wrapper> (Architecture <STRUCTURE>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <ppc405_0_dplb1_wrapper> in library <work> (architecture <STRUCTURE>).
+
+Analyzing hierarchy for entity <plb_v46> in library <plb_v46_v1_04_a> (architecture <simulation>) with generics.
+	C_ADDR_PIPELINING_TYPE = 1
+	C_ARB_TYPE = 0
+	C_BASEADDR = "1111111111"
+	C_DCR_AWIDTH = 10
+	C_DCR_DWIDTH = 32
+	C_DCR_INTFCE = 0
+	C_EXT_RESET_HIGH = 1
+	C_FAMILY = "virtex4"
+	C_HIGHADDR = "0000000000"
+	C_IRQ_ACTIVE = '1'
+	C_P2P = 1
+	C_PLBV46_AWIDTH = 32
+	C_PLBV46_DWIDTH = 64
+	C_PLBV46_MID_WIDTH = 1
+	C_PLBV46_NUM_MASTERS = 1
+	C_PLBV46_NUM_SLAVES = 1
+
+Analyzing hierarchy for entity <plb_p2p> in library <plb_v46_v1_04_a> (architecture <implementation>) with generics.
+	C_ADDR_PIPELINING_TYPE = 1
+	C_FAMILY = "virtex4"
+	C_IRQ_ACTIVE = '1'
+	C_MID_BITS = 1
+	C_NUM_MASTERS = 1
+	C_NUM_SLAVES = 1
+	C_PLB_AWIDTH = 32
+	C_PLB_DWIDTH = 64
+
+Analyzing hierarchy for entity <watchdog_timer> in library <plb_v46_v1_04_a> (architecture <simulation>) with generics.
+	C_SIZE = 4
+
+Analyzing hierarchy for entity <down_counter> in library <proc_common_v3_00_a> (architecture <simulation>) with generics.
+	C_CNT_WIDTH = 4
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <ppc405_0_dplb1_wrapper> in library <work> (Architecture <STRUCTURE>).
+    Set property "syn_maxfan = 10000" for signal <PLB_Rst> in unit <plb_v46>.
+    Set property "syn_maxfan = 10000" for signal <SPLB_Rst> in unit <plb_v46>.
+    Set property "syn_maxfan = 10000" for signal <MPLB_Rst> in unit <plb_v46>.
+    Set property "syn_maxfan = 10000" for signal <PLB_Clk> in unit <plb_v46>.
+Entity <ppc405_0_dplb1_wrapper> analyzed. Unit <ppc405_0_dplb1_wrapper> generated.
+
+Analyzing generic Entity <plb_v46> in library <plb_v46_v1_04_a> (Architecture <simulation>).
+	C_ADDR_PIPELINING_TYPE = 1
+	C_ARB_TYPE = 0
+	C_BASEADDR = "1111111111"
+	C_DCR_AWIDTH = 10
+	C_DCR_DWIDTH = 32
+	C_DCR_INTFCE = 0
+	C_EXT_RESET_HIGH = 1
+	C_FAMILY = "virtex4"
+	C_HIGHADDR = "0000000000"
+	C_IRQ_ACTIVE = '1'
+	C_P2P = 1
+	C_PLBV46_AWIDTH = 32
+	C_PLBV46_DWIDTH = 64
+	C_PLBV46_MID_WIDTH = 1
+	C_PLBV46_NUM_MASTERS = 1
+	C_PLBV46_NUM_SLAVES = 1
+    Set property "syn_maxfan = 10000" for signal <PLB_Rst> in unit <plb_v46>.
+    Set property "syn_maxfan = 10000" for signal <SPLB_Rst> in unit <plb_v46>.
+    Set property "syn_maxfan = 10000" for signal <MPLB_Rst> in unit <plb_v46>.
+    Set property "syn_maxfan = 10000" for signal <PLB_Clk> in unit <plb_v46>.
+    Set user-defined property "INIT =  1" for instance <I_PLB_RST> in unit <plb_v46>.
+    Set user-defined property "INIT =  1" for instance <GEN_SPLB_RST[0].I_SPLB_RST> in unit <plb_v46>.
+    Set user-defined property "INIT =  1" for instance <GEN_MPLB_RST[0].I_MPLB_RST> in unit <plb_v46>.
+Entity <plb_v46> analyzed. Unit <plb_v46> generated.
+
+Analyzing generic Entity <plb_p2p> in library <plb_v46_v1_04_a> (Architecture <implementation>).
+	C_ADDR_PIPELINING_TYPE = 1
+	C_FAMILY = "virtex4"
+	C_IRQ_ACTIVE = '1'
+	C_MID_BITS = 1
+	C_NUM_MASTERS = 1
+	C_NUM_SLAVES = 1
+	C_PLB_AWIDTH = 32
+	C_PLB_DWIDTH = 64
+WARNING:Xst:753 - "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_04_a/hdl/vhdl/plb_p2p.vhd" line 456: Unconnected output port 'WdtMTimeout_n_p1' of component 'watchdog_timer'.
+Entity <plb_p2p> analyzed. Unit <plb_p2p> generated.
+
+Analyzing generic Entity <watchdog_timer> in library <plb_v46_v1_04_a> (Architecture <simulation>).
+	C_SIZE = 4
+Entity <watchdog_timer> analyzed. Unit <watchdog_timer> generated.
+
+Analyzing generic Entity <down_counter> in library <proc_common_v3_00_a> (Architecture <simulation>).
+	C_CNT_WIDTH = 4
+Entity <down_counter> analyzed. Unit <down_counter> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <down_counter>.
+    Related source file is "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/down_counter.vhd".
+    Found 4-bit down counter for signal <cnt>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <down_counter> synthesized.
+
+
+Synthesizing Unit <watchdog_timer>.
+    Related source file is "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_04_a/hdl/vhdl/watchdog_timer.vhd".
+    Found 1-bit register for signal <wdtMTimeout_n_i>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <watchdog_timer> synthesized.
+
+
+Synthesizing Unit <plb_p2p>.
+    Related source file is "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_04_a/hdl/vhdl/plb_p2p.vhd".
+WARNING:Xst:646 - Signal <WrPrimReg> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_0> for signal <arbctrl_sm_cs>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 15                                             |
+    | Inputs             | 9                                              |
+    | Outputs            | 3                                              |
+    | Clock              | Clk                       (rising_edge)        |
+    | Reset              | Rst                       (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | automatic                                      |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <arbRdDBusBusyReg>.
+    Found 1-bit register for signal <arbSecRdInProgReg>.
+    Found 1-bit register for signal <arbSecWrInProgReg>.
+    Found 1-bit register for signal <arbWrDBusBusyReg>.
+    Found 1-bit register for signal <pavalid_i>.
+    Found 1-bit register for signal <RdPrimReg>.
+    Found 1-bit register for signal <savalid_i>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   7 D-type flip-flop(s).
+Unit <plb_p2p> synthesized.
+
+
+Synthesizing Unit <plb_v46>.
+    Related source file is "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_04_a/hdl/vhdl/plb_v46.vhd".
+WARNING:Xst:647 - Input <M_abort<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1305 - Output <Bus_Error_Det> is never assigned. Tied to value 0.
+WARNING:Xst:647 - Input <DCR_Write> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1305 - Output <PLB_dcrDBus> is never assigned. Tied to value 00000000000000000000000000000000.
+WARNING:Xst:647 - Input <DCR_Read> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <DCR_DBus> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <DCR_ABus> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1305 - Output <PLB_dcrAck> is never assigned. Tied to value 0.
+WARNING:Xst:1780 - Signal <wdtMTimeout_n> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <srl_time_out> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <por_FF_out> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <m_buslock_qual<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <arbPriWrMasterReg> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <arbPriRdMasterRegReg> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <arbBurstReq> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <arbAddrSelReg> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <plb_v46> synthesized.
+
+
+Synthesizing Unit <ppc405_0_dplb1_wrapper>.
+    Related source file is "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/ppc405_0_dplb1_wrapper.vhd".
+Unit <ppc405_0_dplb1_wrapper> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 4-bit down counter                                    : 1
+# Registers                                            : 8
+ 1-bit register                                        : 8
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <ppc405_0_dplb1/GEN_P2P.I_PLB_P2P/arbctrl_sm_cs/FSM> on signal <arbctrl_sm_cs[1:2]> with user encoding.
+----------------------
+ State    | Encoding
+----------------------
+ idle     | 00
+ rd_state | 01
+ wr_state | 10
+----------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Counters                                             : 1
+ 4-bit down counter                                    : 1
+# Registers                                            : 11
+ Flip-Flops                                            : 11
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ppc405_0_dplb1_wrapper> ...
+
+Optimizing unit <plb_p2p> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2260 - The FF/Latch <ppc405_0_dplb1/GEN_MPLB_RST[0].I_MPLB_RST> in Unit <ppc405_0_dplb1_wrapper> is equivalent to the following 2 FFs/Latches : <ppc405_0_dplb1/GEN_SPLB_RST[0].I_SPLB_RST> <ppc405_0_dplb1/I_PLB_RST> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 17
+ Flip-Flops                                            : 17
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : ../implementation/ppc405_0_dplb1_wrapper.ngc
+Output Format                      : ngc
+Optimization Goal                  : speed
+Keep Hierarchy                     : no
+
+Design Statistics
+# IOs                              : 679
+
+Cell Usage :
+# BELS                             : 50
+#      GND                         : 1
+#      INV                         : 3
+#      LUT2                        : 5
+#      LUT3                        : 17
+#      LUT3_D                      : 3
+#      LUT3_L                      : 3
+#      LUT4                        : 13
+#      LUT4_D                      : 1
+#      LUT4_L                      : 2
+#      MUXF5                       : 2
+# FlipFlops/Latches                : 17
+#      FD                          : 5
+#      FDR                         : 7
+#      FDRS                        : 2
+#      FDS                         : 3
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 4vfx20ff672-10 
+
+ Number of Slices:                       23  out of   8544     0%  
+ Number of Slice Flip Flops:             17  out of  17088     0%  
+ Number of 4 input LUTs:                 47  out of  17088     0%  
+ Number of IOs:                         679
+ Number of bonded IOBs:                   0  out of    320     0%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                          | Load  |
+-----------------------------------+------------------------------------------------+-------+
+PLB_Clk                            | NONE(ppc405_0_dplb1/GEN_MPLB_RST[0].I_MPLB_RST)| 17    |
+-----------------------------------+------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -10
+
+   Minimum period: 2.697ns (Maximum Frequency: 370.831MHz)
+   Minimum input arrival time before clock: 2.778ns
+   Maximum output required time after clock: 2.087ns
+   Maximum combinational path delay: 1.155ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'PLB_Clk'
+  Clock period: 2.697ns (frequency: 370.831MHz)
+  Total number of paths / destination ports: 90 / 25
+-------------------------------------------------------------------------
+Delay:               2.697ns (Levels of Logic = 3)
+  Source:            ppc405_0_dplb1/GEN_P2P.I_PLB_P2P/arbSecWrInProgReg (FF)
+  Destination:       ppc405_0_dplb1/GEN_P2P.I_PLB_P2P/pavalid_i (FF)
+  Source Clock:      PLB_Clk rising
+  Destination Clock: PLB_Clk rising
+
+  Data Path: ppc405_0_dplb1/GEN_P2P.I_PLB_P2P/arbSecWrInProgReg to ppc405_0_dplb1/GEN_P2P.I_PLB_P2P/pavalid_i
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              6   0.360   0.622  ppc405_0_dplb1/GEN_P2P.I_PLB_P2P/arbSecWrInProgReg (ppc405_0_dplb1/GEN_P2P.I_PLB_P2P/arbSecWrInProgReg)
+     LUT3:I1->O            1   0.195   0.585  ppc405_0_dplb1/GEN_P2P.I_PLB_P2P/pavalid_cmb20 (ppc405_0_dplb1/GEN_P2P.I_PLB_P2P/pavalid_cmb20)
+     LUT4:I2->O            1   0.195   0.523  ppc405_0_dplb1/GEN_P2P.I_PLB_P2P/pavalid_cmb44 (ppc405_0_dplb1/GEN_P2P.I_PLB_P2P/pavalid_cmb44)
+     LUT4:I3->O            1   0.195   0.000  ppc405_0_dplb1/GEN_P2P.I_PLB_P2P/pavalid_i_rstpot (ppc405_0_dplb1/GEN_P2P.I_PLB_P2P/pavalid_i_rstpot)
+     FDR:D                     0.022          ppc405_0_dplb1/GEN_P2P.I_PLB_P2P/pavalid_i
+    ----------------------------------------
+    Total                      2.697ns (0.967ns logic, 1.730ns route)
+                                       (35.9% logic, 64.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'PLB_Clk'
+  Total number of paths / destination ports: 54 / 17
+-------------------------------------------------------------------------
+Offset:              2.778ns (Levels of Logic = 4)
+  Source:            Sl_addrAck<0> (PAD)
+  Destination:       ppc405_0_dplb1/GEN_P2P.I_PLB_P2P/savalid_i (FF)
+  Destination Clock: PLB_Clk rising
+
+  Data Path: Sl_addrAck<0> to ppc405_0_dplb1/GEN_P2P.I_PLB_P2P/savalid_i
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT2:I0->O            2   0.195   0.705  ppc405_0_dplb1/GEN_P2P.I_PLB_P2P/I_WDT/wdtMTimeout_n_p1_i_and000011 (ppc405_0_dplb1/GEN_P2P.I_PLB_P2P/N17)
+     LUT3:I0->O            1   0.195   0.523  ppc405_0_dplb1/GEN_P2P.I_PLB_P2P/savalid_cmb33 (ppc405_0_dplb1/GEN_P2P.I_PLB_P2P/savalid_cmb33)
+     LUT4:I3->O            1   0.195   0.523  ppc405_0_dplb1/GEN_P2P.I_PLB_P2P/savalid_cmb54 (ppc405_0_dplb1/GEN_P2P.I_PLB_P2P/savalid_cmb54)
+     LUT3:I2->O            1   0.195   0.000  ppc405_0_dplb1/GEN_P2P.I_PLB_P2P/savalid_i_rstpot (ppc405_0_dplb1/GEN_P2P.I_PLB_P2P/savalid_i_rstpot)
+     FDR:D                     0.022          ppc405_0_dplb1/GEN_P2P.I_PLB_P2P/savalid_i
+    ----------------------------------------
+    Total                      2.778ns (1.027ns logic, 1.751ns route)
+                                       (37.0% logic, 63.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'PLB_Clk'
+  Total number of paths / destination ports: 13 / 8
+-------------------------------------------------------------------------
+Offset:              2.087ns (Levels of Logic = 2)
+  Source:            ppc405_0_dplb1/GEN_P2P.I_PLB_P2P/I_WDT/wdtMTimeout_n_i (FF)
+  Destination:       PLB_wrPrim<0> (PAD)
+  Source Clock:      PLB_Clk rising
+
+  Data Path: ppc405_0_dplb1/GEN_P2P.I_PLB_P2P/I_WDT/wdtMTimeout_n_i to PLB_wrPrim<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               9   0.360   0.797  ppc405_0_dplb1/GEN_P2P.I_PLB_P2P/I_WDT/wdtMTimeout_n_i (ppc405_0_dplb1/GEN_P2P.I_PLB_P2P/I_WDT/wdtMTimeout_n_i)
+     LUT3_D:I0->O          2   0.195   0.540  ppc405_0_dplb1/GEN_P2P.I_PLB_P2P/arbSecWrInProgReg_and000041 (ppc405_0_dplb1/GEN_P2P.I_PLB_P2P/arbSecWrInProgReg_and0000_bdd4)
+     LUT4:I3->O            0   0.195   0.000  ppc405_0_dplb1/GEN_P2P.I_PLB_P2P/plb_wrprim_i11 (PLB_wrPrim<0>)
+    ----------------------------------------
+    Total                      2.087ns (0.750ns logic, 1.337ns route)
+                                       (35.9% logic, 64.1% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 340 / 337
+-------------------------------------------------------------------------
+Delay:               1.155ns (Levels of Logic = 2)
+  Source:            Sl_addrAck<0> (PAD)
+  Destination:       PLB_wrPrim<0> (PAD)
+
+  Data Path: Sl_addrAck<0> to PLB_wrPrim<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT3_D:I1->O          2   0.195   0.540  ppc405_0_dplb1/GEN_P2P.I_PLB_P2P/arbSecWrInProgReg_and000041 (ppc405_0_dplb1/GEN_P2P.I_PLB_P2P/arbSecWrInProgReg_and0000_bdd4)
+     LUT4:I3->O            0   0.195   0.000  ppc405_0_dplb1/GEN_P2P.I_PLB_P2P/plb_wrprim_i11 (PLB_wrPrim<0>)
+    ----------------------------------------
+    Total                      1.155ns (0.615ns logic, 0.540ns route)
+                                       (53.2% logic, 46.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.73 secs
+ 
+--> 
+
+
+Total memory usage is 511748 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   19 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

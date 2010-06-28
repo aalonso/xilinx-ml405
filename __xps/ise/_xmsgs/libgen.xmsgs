@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="EDK" num="453" delta="new" ><arg fmt="%s" index="1">/home/aalonso/workspace/ppc405/xilinx-ml405-ref/system.mss</arg> line <arg fmt="%i" index="2">105</arg> - <arg fmt="%s" index="3">PARAMETER</arg> <arg fmt="%s" index="4">CLOCK_HZ</arg> is deprecated !. <arg fmt="%s" index="5"></arg>.
+To avoid seeing this Warning again, please remove <arg fmt="%s" index="6">PARAMETER</arg> <arg fmt="%s" index="7">CLOCK_HZ</arg>.
+</msg>
+
+<msg type="warning" file="EDK" num="0" delta="new" >: Bank 0 of EMC core FLASH is used in asynchronous mode.  We assume this core is connected to a flash memory, although in some older designs this configuration may have been used to interface to a peripheral.  Current design recommendations suggest using an EPC core to interface to such peripherals.
+</msg>
+
+</messages>
+

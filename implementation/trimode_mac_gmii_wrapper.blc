@@ -1,0 +1,115 @@
+Release 12.1 ngcbuild M.53d (lin64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Command Line: /opt/Xilinx/12.1/ISE_DS/ISE/bin/lin64/unwrapped/ngcbuild -p
+xc4vfx20ff672-10 -intstyle silent -uc trimode_mac_gmii_wrapper.ucf -sd ..
+trimode_mac_gmii_wrapper.ngc ../trimode_mac_gmii_wrapper.ngc
+
+Reading NGO file
+"/home/aalonso/workspace/ppc405/xilinx-ml405-ref/implementation/trimode_mac_gmii
+_wrapper/trimode_mac_gmii_wrapper.ngc" ...
+Executing edif2ngd -noa
+"/home/aalonso/workspace/ppc405/xilinx-ml405-ref/implementation/trimode_mac_gmii
+_wrapper_fifo_generator_v4_3_1.edn"
+"trimode_mac_gmii_wrapper_fifo_generator_v4_3_1.ngo"
+Release 12.1 - edif2ngd M.53d (lin64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+INFO:NgdBuild - Release 12.1 edif2ngd M.53d (lin64)
+INFO:NgdBuild - Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+PMSPEC -- Overriding Xilinx file </opt/Xilinx/12.1/ISE_DS/EDK/data/edif2ngd.pfd>
+with local file </opt/Xilinx/12.1/ISE_DS/ISE/data/edif2ngd.pfd>
+Writing module to "trimode_mac_gmii_wrapper_fifo_generator_v4_3_1.ngo"...
+Loading design module
+"/home/aalonso/workspace/ppc405/xilinx-ml405-ref/implementation/trimode_mac_gmii
+_wrapper/trimode_mac_gmii_wrapper_fifo_generator_v4_3_1.ngo"...
+Loading design module
+"../trimode_mac_gmii_wrapper_fifo_generator_v4_3_1_fifo_generator_v4_3_xst_1.ngc
+"...
+Executing edif2ngd -noa
+"/home/aalonso/workspace/ppc405/xilinx-ml405-ref/implementation/trimode_mac_gmii
+_wrapper_fifo_generator_v4_3_2.edn"
+"trimode_mac_gmii_wrapper_fifo_generator_v4_3_2.ngo"
+Release 12.1 - edif2ngd M.53d (lin64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+INFO:NgdBuild - Release 12.1 edif2ngd M.53d (lin64)
+INFO:NgdBuild - Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+PMSPEC -- Overriding Xilinx file </opt/Xilinx/12.1/ISE_DS/EDK/data/edif2ngd.pfd>
+with local file </opt/Xilinx/12.1/ISE_DS/ISE/data/edif2ngd.pfd>
+Writing module to "trimode_mac_gmii_wrapper_fifo_generator_v4_3_2.ngo"...
+Loading design module
+"/home/aalonso/workspace/ppc405/xilinx-ml405-ref/implementation/trimode_mac_gmii
+_wrapper/trimode_mac_gmii_wrapper_fifo_generator_v4_3_2.ngo"...
+Loading design module
+"../trimode_mac_gmii_wrapper_fifo_generator_v4_3_2_fifo_generator_v4_3_xst_1.ngc
+"...
+Executing edif2ngd -noa
+"/home/aalonso/workspace/ppc405/xilinx-ml405-ref/implementation/trimode_mac_gmii
+_wrapper_fifo_generator_v4_3_4.edn"
+"trimode_mac_gmii_wrapper_fifo_generator_v4_3_4.ngo"
+Release 12.1 - edif2ngd M.53d (lin64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+INFO:NgdBuild - Release 12.1 edif2ngd M.53d (lin64)
+INFO:NgdBuild - Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+PMSPEC -- Overriding Xilinx file </opt/Xilinx/12.1/ISE_DS/EDK/data/edif2ngd.pfd>
+with local file </opt/Xilinx/12.1/ISE_DS/ISE/data/edif2ngd.pfd>
+Writing module to "trimode_mac_gmii_wrapper_fifo_generator_v4_3_4.ngo"...
+Loading design module
+"/home/aalonso/workspace/ppc405/xilinx-ml405-ref/implementation/trimode_mac_gmii
+_wrapper/trimode_mac_gmii_wrapper_fifo_generator_v4_3_4.ngo"...
+Loading design module
+"../trimode_mac_gmii_wrapper_fifo_generator_v4_3_4_fifo_generator_v4_3_xst_1.ngc
+"...
+Executing edif2ngd -noa
+"/home/aalonso/workspace/ppc405/xilinx-ml405-ref/implementation/trimode_mac_gmii
+_wrapper_fifo_generator_v4_3_3.edn"
+"trimode_mac_gmii_wrapper_fifo_generator_v4_3_3.ngo"
+Release 12.1 - edif2ngd M.53d (lin64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+INFO:NgdBuild - Release 12.1 edif2ngd M.53d (lin64)
+INFO:NgdBuild - Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+PMSPEC -- Overriding Xilinx file </opt/Xilinx/12.1/ISE_DS/EDK/data/edif2ngd.pfd>
+with local file </opt/Xilinx/12.1/ISE_DS/ISE/data/edif2ngd.pfd>
+Writing module to "trimode_mac_gmii_wrapper_fifo_generator_v4_3_3.ngo"...
+Loading design module
+"/home/aalonso/workspace/ppc405/xilinx-ml405-ref/implementation/trimode_mac_gmii
+_wrapper/trimode_mac_gmii_wrapper_fifo_generator_v4_3_3.ngo"...
+Loading design module
+"../trimode_mac_gmii_wrapper_fifo_generator_v4_3_3_fifo_generator_v4_3_xst_1.ngc
+"...
+Executing edif2ngd -noa
+"/home/aalonso/workspace/ppc405/xilinx-ml405-ref/implementation/trimode_mac_gmii
+_wrapper_blk_mem_gen_v2_7.edn" "trimode_mac_gmii_wrapper_blk_mem_gen_v2_7.ngo"
+Release 12.1 - edif2ngd M.53d (lin64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+INFO:NgdBuild - Release 12.1 edif2ngd M.53d (lin64)
+INFO:NgdBuild - Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+PMSPEC -- Overriding Xilinx file </opt/Xilinx/12.1/ISE_DS/EDK/data/edif2ngd.pfd>
+with local file </opt/Xilinx/12.1/ISE_DS/ISE/data/edif2ngd.pfd>
+Writing module to "trimode_mac_gmii_wrapper_blk_mem_gen_v2_7.ngo"...
+Loading design module
+"/home/aalonso/workspace/ppc405/xilinx-ml405-ref/implementation/trimode_mac_gmii
+_wrapper/trimode_mac_gmii_wrapper_blk_mem_gen_v2_7.ngo"...
+Loading design module
+"../trimode_mac_gmii_wrapper_blk_mem_gen_v2_7_blk_mem_gen_v2_7_xst_1.ngc"...
+
+Applying constraints in "trimode_mac_gmii_wrapper.ucf" to the design...
+Checking Constraint Associations...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 379064 kilobytes
+
+Writing NGC file "../trimode_mac_gmii_wrapper.ngc" ...
+Total REAL time to NGCBUILD completion:  16 sec
+Total CPU time to NGCBUILD completion:   6 sec
+
+Writing NGCBUILD log file "../trimode_mac_gmii_wrapper.blc"...

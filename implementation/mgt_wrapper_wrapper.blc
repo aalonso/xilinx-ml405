@@ -1,0 +1,35 @@
+Release 12.1 ngcbuild M.53d (lin64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Command Line: /opt/Xilinx/12.1/ISE_DS/ISE/bin/lin64/unwrapped/ngcbuild -p
+xc4vfx20ff672-10 -intstyle silent -uc mgt_wrapper_wrapper.ucf -sd ..
+mgt_wrapper_wrapper.ngc ../mgt_wrapper_wrapper.ngc
+
+Reading NGO file
+"/home/aalonso/workspace/ppc405/xilinx-ml405-ref/implementation/mgt_wrapper_wrap
+per/mgt_wrapper_wrapper.ngc" ...
+Loading design module
+"/home/aalonso/workspace/ppc405/xilinx-ml405-ref/implementation/mgt_wrapper_wrap
+per/NULL_PAIR.ngc"...
+
+Applying constraints in "mgt_wrapper_wrapper.ucf" to the design...
+Checking Constraint Associations...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 370056 kilobytes
+
+Writing NGC file "../mgt_wrapper_wrapper.ngc" ...
+Total REAL time to NGCBUILD completion:  5 sec
+Total CPU time to NGCBUILD completion:   5 sec
+
+Writing NGCBUILD log file "../mgt_wrapper_wrapper.blc"...

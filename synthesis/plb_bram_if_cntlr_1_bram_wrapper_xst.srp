@@ -1,0 +1,874 @@
+Release 12.1 - xst M.53d (lin64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> 
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "plb_bram_if_cntlr_1_bram_wrapper_xst.prj"
+Verilog Include Directory          : {"/home/aalonso/workspace/ppc405/xilinx-ml405-ref/pcores/" "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/" }
+
+---- Target Parameters
+Target Device                      : xc4vfx20ff672-10
+Output File Name                   : "../implementation/plb_bram_if_cntlr_1_bram_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : plb_bram_if_cntlr_1_bram_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation/plb_bram_if_cntlr_1_bram_wrapper}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" in Library plb_bram_if_cntlr_1_bram_elaborate_v1_00_a.
+Entity <plb_bram_if_cntlr_1_bram_elaborate> compiled.
+Entity <plb_bram_if_cntlr_1_bram_elaborate> (Architecture <STRUCTURE>) compiled.
+Compiling vhdl file "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/plb_bram_if_cntlr_1_bram_wrapper.vhd" in Library work.
+Entity <plb_bram_if_cntlr_1_bram_wrapper> compiled.
+Entity <plb_bram_if_cntlr_1_bram_wrapper> (Architecture <STRUCTURE>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <plb_bram_if_cntlr_1_bram_wrapper> in library <work> (architecture <STRUCTURE>).
+
+Analyzing hierarchy for entity <plb_bram_if_cntlr_1_bram_elaborate> in library <plb_bram_if_cntlr_1_bram_elaborate_v1_00_a> (architecture <STRUCTURE>) with generics.
+	C_FAMILY = "virtex4"
+	C_MEMSIZE = 65536
+	C_NUM_WE = 8
+	C_PORT_AWIDTH = 32
+	C_PORT_DWIDTH = 64
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <plb_bram_if_cntlr_1_bram_wrapper> in library <work> (Architecture <STRUCTURE>).
+    Set user-defined property "KEEP_HIERARCHY =  yes" for unit <plb_bram_if_cntlr_1_bram_wrapper>.
+    Set user-defined property "KEEP_HIERARCHY =  yes" for unit <plb_bram_if_cntlr_1_bram_elaborate>.
+Entity <plb_bram_if_cntlr_1_bram_wrapper> analyzed. Unit <plb_bram_if_cntlr_1_bram_wrapper> generated.
+
+Analyzing generic Entity <plb_bram_if_cntlr_1_bram_elaborate> in library <plb_bram_if_cntlr_1_bram_elaborate_v1_00_a> (Architecture <STRUCTURE>).
+	C_FAMILY = "virtex4"
+	C_MEMSIZE = 65536
+	C_NUM_WE = 8
+	C_PORT_AWIDTH = 32
+	C_PORT_DWIDTH = 64
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1030: Unconnected output port 'CASCADEOUTA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1030: Unconnected output port 'DOPA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1030: Unconnected output port 'CASCADEOUTB' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1030: Unconnected output port 'DOPB' of component 'RAMB16'.
+WARNING:Xst:2211 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1030: Instantiating black box module <RAMB16>.
+    Set user-defined property "BMM_INFO =   " for instance <ramb16_0> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "INIT_FILE =  plb_bram_if_cntlr_1_bram_combined_0.mem" for instance <ramb16_0> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_A =  NONE" for instance <ramb16_0> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_B =  NONE" for instance <ramb16_0> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_A =  2" for instance <ramb16_0> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_B =  2" for instance <ramb16_0> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_0> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_0> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_A =  2" for instance <ramb16_0> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_B =  2" for instance <ramb16_0> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1069: Unconnected output port 'CASCADEOUTA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1069: Unconnected output port 'DOPA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1069: Unconnected output port 'CASCADEOUTB' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1069: Unconnected output port 'DOPB' of component 'RAMB16'.
+WARNING:Xst:2211 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1069: Instantiating black box module <RAMB16>.
+    Set user-defined property "BMM_INFO =   " for instance <ramb16_1> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "INIT_FILE =  plb_bram_if_cntlr_1_bram_combined_1.mem" for instance <ramb16_1> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_A =  NONE" for instance <ramb16_1> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_B =  NONE" for instance <ramb16_1> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_A =  2" for instance <ramb16_1> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_B =  2" for instance <ramb16_1> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_1> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_1> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_A =  2" for instance <ramb16_1> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_B =  2" for instance <ramb16_1> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1108: Unconnected output port 'CASCADEOUTA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1108: Unconnected output port 'DOPA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1108: Unconnected output port 'CASCADEOUTB' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1108: Unconnected output port 'DOPB' of component 'RAMB16'.
+WARNING:Xst:2211 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1108: Instantiating black box module <RAMB16>.
+    Set user-defined property "BMM_INFO =   " for instance <ramb16_2> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "INIT_FILE =  plb_bram_if_cntlr_1_bram_combined_2.mem" for instance <ramb16_2> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_A =  NONE" for instance <ramb16_2> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_B =  NONE" for instance <ramb16_2> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_A =  2" for instance <ramb16_2> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_B =  2" for instance <ramb16_2> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_2> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_2> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_A =  2" for instance <ramb16_2> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_B =  2" for instance <ramb16_2> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1147: Unconnected output port 'CASCADEOUTA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1147: Unconnected output port 'DOPA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1147: Unconnected output port 'CASCADEOUTB' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1147: Unconnected output port 'DOPB' of component 'RAMB16'.
+WARNING:Xst:2211 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1147: Instantiating black box module <RAMB16>.
+    Set user-defined property "BMM_INFO =   " for instance <ramb16_3> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "INIT_FILE =  plb_bram_if_cntlr_1_bram_combined_3.mem" for instance <ramb16_3> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_A =  NONE" for instance <ramb16_3> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_B =  NONE" for instance <ramb16_3> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_A =  2" for instance <ramb16_3> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_B =  2" for instance <ramb16_3> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_3> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_3> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_A =  2" for instance <ramb16_3> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_B =  2" for instance <ramb16_3> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1186: Unconnected output port 'CASCADEOUTA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1186: Unconnected output port 'DOPA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1186: Unconnected output port 'CASCADEOUTB' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1186: Unconnected output port 'DOPB' of component 'RAMB16'.
+WARNING:Xst:2211 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1186: Instantiating black box module <RAMB16>.
+    Set user-defined property "BMM_INFO =   " for instance <ramb16_4> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "INIT_FILE =  plb_bram_if_cntlr_1_bram_combined_4.mem" for instance <ramb16_4> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_A =  NONE" for instance <ramb16_4> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_B =  NONE" for instance <ramb16_4> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_A =  2" for instance <ramb16_4> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_B =  2" for instance <ramb16_4> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_4> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_4> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_A =  2" for instance <ramb16_4> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_B =  2" for instance <ramb16_4> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1225: Unconnected output port 'CASCADEOUTA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1225: Unconnected output port 'DOPA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1225: Unconnected output port 'CASCADEOUTB' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1225: Unconnected output port 'DOPB' of component 'RAMB16'.
+WARNING:Xst:2211 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1225: Instantiating black box module <RAMB16>.
+    Set user-defined property "BMM_INFO =   " for instance <ramb16_5> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "INIT_FILE =  plb_bram_if_cntlr_1_bram_combined_5.mem" for instance <ramb16_5> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_A =  NONE" for instance <ramb16_5> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_B =  NONE" for instance <ramb16_5> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_A =  2" for instance <ramb16_5> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_B =  2" for instance <ramb16_5> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_5> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_5> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_A =  2" for instance <ramb16_5> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_B =  2" for instance <ramb16_5> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1264: Unconnected output port 'CASCADEOUTA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1264: Unconnected output port 'DOPA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1264: Unconnected output port 'CASCADEOUTB' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1264: Unconnected output port 'DOPB' of component 'RAMB16'.
+WARNING:Xst:2211 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1264: Instantiating black box module <RAMB16>.
+    Set user-defined property "BMM_INFO =   " for instance <ramb16_6> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "INIT_FILE =  plb_bram_if_cntlr_1_bram_combined_6.mem" for instance <ramb16_6> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_A =  NONE" for instance <ramb16_6> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_B =  NONE" for instance <ramb16_6> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_A =  2" for instance <ramb16_6> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_B =  2" for instance <ramb16_6> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_6> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_6> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_A =  2" for instance <ramb16_6> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_B =  2" for instance <ramb16_6> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1303: Unconnected output port 'CASCADEOUTA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1303: Unconnected output port 'DOPA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1303: Unconnected output port 'CASCADEOUTB' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1303: Unconnected output port 'DOPB' of component 'RAMB16'.
+WARNING:Xst:2211 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1303: Instantiating black box module <RAMB16>.
+    Set user-defined property "BMM_INFO =   " for instance <ramb16_7> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "INIT_FILE =  plb_bram_if_cntlr_1_bram_combined_7.mem" for instance <ramb16_7> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_A =  NONE" for instance <ramb16_7> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_B =  NONE" for instance <ramb16_7> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_A =  2" for instance <ramb16_7> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_B =  2" for instance <ramb16_7> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_7> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_7> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_A =  2" for instance <ramb16_7> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_B =  2" for instance <ramb16_7> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1342: Unconnected output port 'CASCADEOUTA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1342: Unconnected output port 'DOPA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1342: Unconnected output port 'CASCADEOUTB' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1342: Unconnected output port 'DOPB' of component 'RAMB16'.
+WARNING:Xst:2211 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1342: Instantiating black box module <RAMB16>.
+    Set user-defined property "BMM_INFO =   " for instance <ramb16_8> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "INIT_FILE =  plb_bram_if_cntlr_1_bram_combined_8.mem" for instance <ramb16_8> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_A =  NONE" for instance <ramb16_8> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_B =  NONE" for instance <ramb16_8> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_A =  2" for instance <ramb16_8> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_B =  2" for instance <ramb16_8> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_8> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_8> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_A =  2" for instance <ramb16_8> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_B =  2" for instance <ramb16_8> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1381: Unconnected output port 'CASCADEOUTA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1381: Unconnected output port 'DOPA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1381: Unconnected output port 'CASCADEOUTB' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1381: Unconnected output port 'DOPB' of component 'RAMB16'.
+WARNING:Xst:2211 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1381: Instantiating black box module <RAMB16>.
+    Set user-defined property "BMM_INFO =   " for instance <ramb16_9> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "INIT_FILE =  plb_bram_if_cntlr_1_bram_combined_9.mem" for instance <ramb16_9> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_A =  NONE" for instance <ramb16_9> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_B =  NONE" for instance <ramb16_9> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_A =  2" for instance <ramb16_9> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_B =  2" for instance <ramb16_9> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_9> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_9> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_A =  2" for instance <ramb16_9> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_B =  2" for instance <ramb16_9> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1420: Unconnected output port 'CASCADEOUTA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1420: Unconnected output port 'DOPA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1420: Unconnected output port 'CASCADEOUTB' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1420: Unconnected output port 'DOPB' of component 'RAMB16'.
+WARNING:Xst:2211 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1420: Instantiating black box module <RAMB16>.
+    Set user-defined property "BMM_INFO =   " for instance <ramb16_10> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "INIT_FILE =  plb_bram_if_cntlr_1_bram_combined_10.mem" for instance <ramb16_10> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_A =  NONE" for instance <ramb16_10> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_B =  NONE" for instance <ramb16_10> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_A =  2" for instance <ramb16_10> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_B =  2" for instance <ramb16_10> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_10> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_10> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_A =  2" for instance <ramb16_10> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_B =  2" for instance <ramb16_10> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1459: Unconnected output port 'CASCADEOUTA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1459: Unconnected output port 'DOPA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1459: Unconnected output port 'CASCADEOUTB' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1459: Unconnected output port 'DOPB' of component 'RAMB16'.
+WARNING:Xst:2211 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1459: Instantiating black box module <RAMB16>.
+    Set user-defined property "BMM_INFO =   " for instance <ramb16_11> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "INIT_FILE =  plb_bram_if_cntlr_1_bram_combined_11.mem" for instance <ramb16_11> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_A =  NONE" for instance <ramb16_11> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_B =  NONE" for instance <ramb16_11> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_A =  2" for instance <ramb16_11> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_B =  2" for instance <ramb16_11> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_11> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_11> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_A =  2" for instance <ramb16_11> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_B =  2" for instance <ramb16_11> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1498: Unconnected output port 'CASCADEOUTA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1498: Unconnected output port 'DOPA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1498: Unconnected output port 'CASCADEOUTB' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1498: Unconnected output port 'DOPB' of component 'RAMB16'.
+WARNING:Xst:2211 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1498: Instantiating black box module <RAMB16>.
+    Set user-defined property "BMM_INFO =   " for instance <ramb16_12> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "INIT_FILE =  plb_bram_if_cntlr_1_bram_combined_12.mem" for instance <ramb16_12> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_A =  NONE" for instance <ramb16_12> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_B =  NONE" for instance <ramb16_12> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_A =  2" for instance <ramb16_12> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_B =  2" for instance <ramb16_12> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_12> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_12> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_A =  2" for instance <ramb16_12> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_B =  2" for instance <ramb16_12> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1537: Unconnected output port 'CASCADEOUTA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1537: Unconnected output port 'DOPA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1537: Unconnected output port 'CASCADEOUTB' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1537: Unconnected output port 'DOPB' of component 'RAMB16'.
+WARNING:Xst:2211 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1537: Instantiating black box module <RAMB16>.
+    Set user-defined property "BMM_INFO =   " for instance <ramb16_13> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "INIT_FILE =  plb_bram_if_cntlr_1_bram_combined_13.mem" for instance <ramb16_13> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_A =  NONE" for instance <ramb16_13> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_B =  NONE" for instance <ramb16_13> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_A =  2" for instance <ramb16_13> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_B =  2" for instance <ramb16_13> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_13> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_13> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_A =  2" for instance <ramb16_13> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_B =  2" for instance <ramb16_13> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1576: Unconnected output port 'CASCADEOUTA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1576: Unconnected output port 'DOPA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1576: Unconnected output port 'CASCADEOUTB' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1576: Unconnected output port 'DOPB' of component 'RAMB16'.
+WARNING:Xst:2211 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1576: Instantiating black box module <RAMB16>.
+    Set user-defined property "BMM_INFO =   " for instance <ramb16_14> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "INIT_FILE =  plb_bram_if_cntlr_1_bram_combined_14.mem" for instance <ramb16_14> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_A =  NONE" for instance <ramb16_14> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_B =  NONE" for instance <ramb16_14> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_A =  2" for instance <ramb16_14> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_B =  2" for instance <ramb16_14> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_14> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_14> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_A =  2" for instance <ramb16_14> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_B =  2" for instance <ramb16_14> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1615: Unconnected output port 'CASCADEOUTA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1615: Unconnected output port 'DOPA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1615: Unconnected output port 'CASCADEOUTB' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1615: Unconnected output port 'DOPB' of component 'RAMB16'.
+WARNING:Xst:2211 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1615: Instantiating black box module <RAMB16>.
+    Set user-defined property "BMM_INFO =   " for instance <ramb16_15> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "INIT_FILE =  plb_bram_if_cntlr_1_bram_combined_15.mem" for instance <ramb16_15> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_A =  NONE" for instance <ramb16_15> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_B =  NONE" for instance <ramb16_15> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_A =  2" for instance <ramb16_15> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_B =  2" for instance <ramb16_15> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_15> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_15> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_A =  2" for instance <ramb16_15> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_B =  2" for instance <ramb16_15> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1654: Unconnected output port 'CASCADEOUTA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1654: Unconnected output port 'DOPA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1654: Unconnected output port 'CASCADEOUTB' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1654: Unconnected output port 'DOPB' of component 'RAMB16'.
+WARNING:Xst:2211 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1654: Instantiating black box module <RAMB16>.
+    Set user-defined property "BMM_INFO =   " for instance <ramb16_16> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "INIT_FILE =  plb_bram_if_cntlr_1_bram_combined_16.mem" for instance <ramb16_16> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_A =  NONE" for instance <ramb16_16> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_B =  NONE" for instance <ramb16_16> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_A =  2" for instance <ramb16_16> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_B =  2" for instance <ramb16_16> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_16> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_16> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_A =  2" for instance <ramb16_16> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_B =  2" for instance <ramb16_16> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1693: Unconnected output port 'CASCADEOUTA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1693: Unconnected output port 'DOPA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1693: Unconnected output port 'CASCADEOUTB' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1693: Unconnected output port 'DOPB' of component 'RAMB16'.
+WARNING:Xst:2211 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1693: Instantiating black box module <RAMB16>.
+    Set user-defined property "BMM_INFO =   " for instance <ramb16_17> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "INIT_FILE =  plb_bram_if_cntlr_1_bram_combined_17.mem" for instance <ramb16_17> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_A =  NONE" for instance <ramb16_17> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_B =  NONE" for instance <ramb16_17> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_A =  2" for instance <ramb16_17> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_B =  2" for instance <ramb16_17> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_17> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_17> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_A =  2" for instance <ramb16_17> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_B =  2" for instance <ramb16_17> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1732: Unconnected output port 'CASCADEOUTA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1732: Unconnected output port 'DOPA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1732: Unconnected output port 'CASCADEOUTB' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1732: Unconnected output port 'DOPB' of component 'RAMB16'.
+WARNING:Xst:2211 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1732: Instantiating black box module <RAMB16>.
+    Set user-defined property "BMM_INFO =   " for instance <ramb16_18> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "INIT_FILE =  plb_bram_if_cntlr_1_bram_combined_18.mem" for instance <ramb16_18> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_A =  NONE" for instance <ramb16_18> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_B =  NONE" for instance <ramb16_18> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_A =  2" for instance <ramb16_18> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_B =  2" for instance <ramb16_18> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_18> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_18> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_A =  2" for instance <ramb16_18> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_B =  2" for instance <ramb16_18> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1771: Unconnected output port 'CASCADEOUTA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1771: Unconnected output port 'DOPA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1771: Unconnected output port 'CASCADEOUTB' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1771: Unconnected output port 'DOPB' of component 'RAMB16'.
+WARNING:Xst:2211 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1771: Instantiating black box module <RAMB16>.
+    Set user-defined property "BMM_INFO =   " for instance <ramb16_19> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "INIT_FILE =  plb_bram_if_cntlr_1_bram_combined_19.mem" for instance <ramb16_19> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_A =  NONE" for instance <ramb16_19> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_B =  NONE" for instance <ramb16_19> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_A =  2" for instance <ramb16_19> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_B =  2" for instance <ramb16_19> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_19> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_19> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_A =  2" for instance <ramb16_19> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_B =  2" for instance <ramb16_19> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1810: Unconnected output port 'CASCADEOUTA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1810: Unconnected output port 'DOPA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1810: Unconnected output port 'CASCADEOUTB' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1810: Unconnected output port 'DOPB' of component 'RAMB16'.
+WARNING:Xst:2211 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1810: Instantiating black box module <RAMB16>.
+    Set user-defined property "BMM_INFO =   " for instance <ramb16_20> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "INIT_FILE =  plb_bram_if_cntlr_1_bram_combined_20.mem" for instance <ramb16_20> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_A =  NONE" for instance <ramb16_20> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_B =  NONE" for instance <ramb16_20> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_A =  2" for instance <ramb16_20> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_B =  2" for instance <ramb16_20> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_20> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_20> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_A =  2" for instance <ramb16_20> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_B =  2" for instance <ramb16_20> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1849: Unconnected output port 'CASCADEOUTA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1849: Unconnected output port 'DOPA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1849: Unconnected output port 'CASCADEOUTB' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1849: Unconnected output port 'DOPB' of component 'RAMB16'.
+WARNING:Xst:2211 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1849: Instantiating black box module <RAMB16>.
+    Set user-defined property "BMM_INFO =   " for instance <ramb16_21> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "INIT_FILE =  plb_bram_if_cntlr_1_bram_combined_21.mem" for instance <ramb16_21> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_A =  NONE" for instance <ramb16_21> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_B =  NONE" for instance <ramb16_21> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_A =  2" for instance <ramb16_21> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_B =  2" for instance <ramb16_21> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_21> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_21> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_A =  2" for instance <ramb16_21> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_B =  2" for instance <ramb16_21> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1888: Unconnected output port 'CASCADEOUTA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1888: Unconnected output port 'DOPA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1888: Unconnected output port 'CASCADEOUTB' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1888: Unconnected output port 'DOPB' of component 'RAMB16'.
+WARNING:Xst:2211 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1888: Instantiating black box module <RAMB16>.
+    Set user-defined property "BMM_INFO =   " for instance <ramb16_22> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "INIT_FILE =  plb_bram_if_cntlr_1_bram_combined_22.mem" for instance <ramb16_22> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_A =  NONE" for instance <ramb16_22> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_B =  NONE" for instance <ramb16_22> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_A =  2" for instance <ramb16_22> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_B =  2" for instance <ramb16_22> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_22> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_22> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_A =  2" for instance <ramb16_22> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_B =  2" for instance <ramb16_22> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1927: Unconnected output port 'CASCADEOUTA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1927: Unconnected output port 'DOPA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1927: Unconnected output port 'CASCADEOUTB' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1927: Unconnected output port 'DOPB' of component 'RAMB16'.
+WARNING:Xst:2211 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1927: Instantiating black box module <RAMB16>.
+    Set user-defined property "BMM_INFO =   " for instance <ramb16_23> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "INIT_FILE =  plb_bram_if_cntlr_1_bram_combined_23.mem" for instance <ramb16_23> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_A =  NONE" for instance <ramb16_23> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_B =  NONE" for instance <ramb16_23> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_A =  2" for instance <ramb16_23> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_B =  2" for instance <ramb16_23> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_23> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_23> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_A =  2" for instance <ramb16_23> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_B =  2" for instance <ramb16_23> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1966: Unconnected output port 'CASCADEOUTA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1966: Unconnected output port 'DOPA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1966: Unconnected output port 'CASCADEOUTB' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1966: Unconnected output port 'DOPB' of component 'RAMB16'.
+WARNING:Xst:2211 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 1966: Instantiating black box module <RAMB16>.
+    Set user-defined property "BMM_INFO =   " for instance <ramb16_24> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "INIT_FILE =  plb_bram_if_cntlr_1_bram_combined_24.mem" for instance <ramb16_24> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_A =  NONE" for instance <ramb16_24> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_B =  NONE" for instance <ramb16_24> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_A =  2" for instance <ramb16_24> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_B =  2" for instance <ramb16_24> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_24> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_24> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_A =  2" for instance <ramb16_24> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_B =  2" for instance <ramb16_24> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 2005: Unconnected output port 'CASCADEOUTA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 2005: Unconnected output port 'DOPA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 2005: Unconnected output port 'CASCADEOUTB' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 2005: Unconnected output port 'DOPB' of component 'RAMB16'.
+WARNING:Xst:2211 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 2005: Instantiating black box module <RAMB16>.
+    Set user-defined property "BMM_INFO =   " for instance <ramb16_25> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "INIT_FILE =  plb_bram_if_cntlr_1_bram_combined_25.mem" for instance <ramb16_25> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_A =  NONE" for instance <ramb16_25> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_B =  NONE" for instance <ramb16_25> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_A =  2" for instance <ramb16_25> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_B =  2" for instance <ramb16_25> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_25> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_25> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_A =  2" for instance <ramb16_25> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_B =  2" for instance <ramb16_25> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 2044: Unconnected output port 'CASCADEOUTA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 2044: Unconnected output port 'DOPA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 2044: Unconnected output port 'CASCADEOUTB' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 2044: Unconnected output port 'DOPB' of component 'RAMB16'.
+WARNING:Xst:2211 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 2044: Instantiating black box module <RAMB16>.
+    Set user-defined property "BMM_INFO =   " for instance <ramb16_26> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "INIT_FILE =  plb_bram_if_cntlr_1_bram_combined_26.mem" for instance <ramb16_26> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_A =  NONE" for instance <ramb16_26> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_B =  NONE" for instance <ramb16_26> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_A =  2" for instance <ramb16_26> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_B =  2" for instance <ramb16_26> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_26> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_26> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_A =  2" for instance <ramb16_26> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_B =  2" for instance <ramb16_26> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 2083: Unconnected output port 'CASCADEOUTA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 2083: Unconnected output port 'DOPA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 2083: Unconnected output port 'CASCADEOUTB' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 2083: Unconnected output port 'DOPB' of component 'RAMB16'.
+WARNING:Xst:2211 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 2083: Instantiating black box module <RAMB16>.
+    Set user-defined property "BMM_INFO =   " for instance <ramb16_27> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "INIT_FILE =  plb_bram_if_cntlr_1_bram_combined_27.mem" for instance <ramb16_27> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_A =  NONE" for instance <ramb16_27> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_B =  NONE" for instance <ramb16_27> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_A =  2" for instance <ramb16_27> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_B =  2" for instance <ramb16_27> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_27> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_27> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_A =  2" for instance <ramb16_27> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_B =  2" for instance <ramb16_27> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 2122: Unconnected output port 'CASCADEOUTA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 2122: Unconnected output port 'DOPA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 2122: Unconnected output port 'CASCADEOUTB' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 2122: Unconnected output port 'DOPB' of component 'RAMB16'.
+WARNING:Xst:2211 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 2122: Instantiating black box module <RAMB16>.
+    Set user-defined property "BMM_INFO =   " for instance <ramb16_28> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "INIT_FILE =  plb_bram_if_cntlr_1_bram_combined_28.mem" for instance <ramb16_28> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_A =  NONE" for instance <ramb16_28> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_B =  NONE" for instance <ramb16_28> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_A =  2" for instance <ramb16_28> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_B =  2" for instance <ramb16_28> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_28> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_28> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_A =  2" for instance <ramb16_28> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_B =  2" for instance <ramb16_28> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 2161: Unconnected output port 'CASCADEOUTA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 2161: Unconnected output port 'DOPA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 2161: Unconnected output port 'CASCADEOUTB' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 2161: Unconnected output port 'DOPB' of component 'RAMB16'.
+WARNING:Xst:2211 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 2161: Instantiating black box module <RAMB16>.
+    Set user-defined property "BMM_INFO =   " for instance <ramb16_29> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "INIT_FILE =  plb_bram_if_cntlr_1_bram_combined_29.mem" for instance <ramb16_29> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_A =  NONE" for instance <ramb16_29> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_B =  NONE" for instance <ramb16_29> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_A =  2" for instance <ramb16_29> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_B =  2" for instance <ramb16_29> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_29> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_29> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_A =  2" for instance <ramb16_29> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_B =  2" for instance <ramb16_29> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 2200: Unconnected output port 'CASCADEOUTA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 2200: Unconnected output port 'DOPA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 2200: Unconnected output port 'CASCADEOUTB' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 2200: Unconnected output port 'DOPB' of component 'RAMB16'.
+WARNING:Xst:2211 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 2200: Instantiating black box module <RAMB16>.
+    Set user-defined property "BMM_INFO =   " for instance <ramb16_30> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "INIT_FILE =  plb_bram_if_cntlr_1_bram_combined_30.mem" for instance <ramb16_30> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_A =  NONE" for instance <ramb16_30> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_B =  NONE" for instance <ramb16_30> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_A =  2" for instance <ramb16_30> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_B =  2" for instance <ramb16_30> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_30> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_30> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_A =  2" for instance <ramb16_30> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_B =  2" for instance <ramb16_30> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 2239: Unconnected output port 'CASCADEOUTA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 2239: Unconnected output port 'DOPA' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 2239: Unconnected output port 'CASCADEOUTB' of component 'RAMB16'.
+WARNING:Xst:753 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 2239: Unconnected output port 'DOPB' of component 'RAMB16'.
+WARNING:Xst:2211 - "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd" line 2239: Instantiating black box module <RAMB16>.
+    Set user-defined property "BMM_INFO =   " for instance <ramb16_31> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "INIT_FILE =  plb_bram_if_cntlr_1_bram_combined_31.mem" for instance <ramb16_31> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_A =  NONE" for instance <ramb16_31> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "RAM_EXTENSION_B =  NONE" for instance <ramb16_31> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_A =  2" for instance <ramb16_31> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "READ_WIDTH_B =  2" for instance <ramb16_31> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_31> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_31> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_A =  2" for instance <ramb16_31> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Set user-defined property "WRITE_WIDTH_B =  2" for instance <ramb16_31> in unit <plb_bram_if_cntlr_1_bram_elaborate>.
+Entity <plb_bram_if_cntlr_1_bram_elaborate> analyzed. Unit <plb_bram_if_cntlr_1_bram_elaborate> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <plb_bram_if_cntlr_1_bram_elaborate>.
+    Related source file is "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/elaborate/plb_bram_if_cntlr_1_bram_elaborate_v1_00_a/hdl/vhdl/plb_bram_if_cntlr_1_bram_elaborate.vhd".
+WARNING:Xst:647 - Input <BRAM_Addr_A<0:15>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <BRAM_Addr_A<29:31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <BRAM_Addr_B<0:15>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <BRAM_Addr_B<29:31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <pgassign98<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign94<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign90<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign86<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign82<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign78<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign74<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign70<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign66<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign62<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign6<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign58<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign54<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign50<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign46<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign42<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign38<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign34<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign30<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign26<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign258<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign254<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign250<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign246<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign242<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign238<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign234<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign230<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign226<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign222<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign22<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign218<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign214<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign210<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign206<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign202<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign2<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign198<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign194<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign190<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign186<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign182<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign18<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign178<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign174<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign170<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign166<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign162<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign158<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign154<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign150<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign146<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign142<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign14<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign138<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign134<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign130<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign126<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign122<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign118<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign114<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign110<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign106<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign102<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign10<31:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pgassign1<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <plb_bram_if_cntlr_1_bram_elaborate> synthesized.
+
+
+Synthesizing Unit <plb_bram_if_cntlr_1_bram_wrapper>.
+    Related source file is "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/plb_bram_if_cntlr_1_bram_wrapper.vhd".
+Unit <plb_bram_if_cntlr_1_bram_wrapper> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <plb_bram_if_cntlr_1_bram_wrapper> ...
+
+Optimizing unit <plb_bram_if_cntlr_1_bram_elaborate> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : ../implementation/plb_bram_if_cntlr_1_bram_wrapper.ngc
+Output Format                      : ngc
+Optimization Goal                  : speed
+Keep Hierarchy                     : no
+
+Design Statistics
+# IOs                              : 342
+
+Cell Usage :
+# BELS                             : 2
+#      GND                         : 1
+#      VCC                         : 1
+# RAMS                             : 32
+#      RAMB16                      : 32
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 4vfx20ff672-10 
+
+ Number of Slices:                        0  out of   8544     0%  
+ Number of IOs:                         342
+ Number of bonded IOBs:                   0  out of    320     0%  
+ Number of FIFO16/RAMB16s:               32  out of     68    47%  
+    Number used as RAMB16s:              32
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+----------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                  | Load  |
+-----------------------------------+----------------------------------------+-------+
+BRAM_Clk_A                         | NONE(plb_bram_if_cntlr_1_bram/ramb16_0)| 32    |
+BRAM_Clk_B                         | NONE(plb_bram_if_cntlr_1_bram/ramb16_0)| 32    |
+-----------------------------------+----------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------------------------------------+----------------------------------------+-------+
+Control Signal                                                       | Buffer(FF name)                        | Load  |
+---------------------------------------------------------------------+----------------------------------------+-------+
+plb_bram_if_cntlr_1_bram/net_gnd0(plb_bram_if_cntlr_1_bram/XST_GND:G)| NONE(plb_bram_if_cntlr_1_bram/ramb16_0)| 128   |
+---------------------------------------------------------------------+----------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -10
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 0.748ns
+   Maximum output required time after clock: 2.100ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'BRAM_Clk_A'
+  Total number of paths / destination ports: 672 / 672
+-------------------------------------------------------------------------
+Offset:              0.748ns (Levels of Logic = 1)
+  Source:            BRAM_WEN_A<0> (PAD)
+  Destination:       plb_bram_if_cntlr_1_bram/ramb16_0 (RAM)
+  Destination Clock: BRAM_Clk_A rising
+
+  Data Path: BRAM_WEN_A<0> to plb_bram_if_cntlr_1_bram/ramb16_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     begin scope: 'plb_bram_if_cntlr_1_bram'
+     RAMB16:WEA3               0.748          ramb16_0
+    ----------------------------------------
+    Total                      0.748ns (0.748ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'BRAM_Clk_B'
+  Total number of paths / destination ports: 672 / 672
+-------------------------------------------------------------------------
+Offset:              0.748ns (Levels of Logic = 1)
+  Source:            BRAM_WEN_B<0> (PAD)
+  Destination:       plb_bram_if_cntlr_1_bram/ramb16_0 (RAM)
+  Destination Clock: BRAM_Clk_B rising
+
+  Data Path: BRAM_WEN_B<0> to plb_bram_if_cntlr_1_bram/ramb16_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     begin scope: 'plb_bram_if_cntlr_1_bram'
+     RAMB16:WEB3               0.748          ramb16_0
+    ----------------------------------------
+    Total                      0.748ns (0.748ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'BRAM_Clk_B'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              2.100ns (Levels of Logic = 1)
+  Source:            plb_bram_if_cntlr_1_bram/ramb16_0 (RAM)
+  Destination:       BRAM_Din_B<0> (PAD)
+  Source Clock:      BRAM_Clk_B rising
+
+  Data Path: plb_bram_if_cntlr_1_bram/ramb16_0 to BRAM_Din_B<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16:CLKB->DOB1     0   2.100   0.000  ramb16_0 (BRAM_Din_B<0>)
+     end scope: 'plb_bram_if_cntlr_1_bram'
+    ----------------------------------------
+    Total                      2.100ns (2.100ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'BRAM_Clk_A'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              2.100ns (Levels of Logic = 1)
+  Source:            plb_bram_if_cntlr_1_bram/ramb16_0 (RAM)
+  Destination:       BRAM_Din_A<0> (PAD)
+  Source Clock:      BRAM_Clk_A rising
+
+  Data Path: plb_bram_if_cntlr_1_bram/ramb16_0 to BRAM_Din_A<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16:CLKA->DOA1     0   2.100   0.000  ramb16_0 (BRAM_Din_A<0>)
+     end scope: 'plb_bram_if_cntlr_1_bram'
+    ----------------------------------------
+    Total                      2.100ns (2.100ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 30.00 secs
+Total CPU time to Xst completion: 30.33 secs
+ 
+--> 
+
+
+Total memory usage is 483272 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  231 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

@@ -1,0 +1,54 @@
+
+Checking platform configuration ...
+IPNAME:plb_v46 INSTANCE:plb -
+/home/aalonso/workspace/ppc405/xilinx-ml405-ref/system.mhs line 82 - 2 master(s)
+: 13 slave(s)
+IPNAME:plb_v46 INSTANCE:ppc405_0_iplb1 -
+/home/aalonso/workspace/ppc405/xilinx-ml405-ref/system.mhs line 224 - 1
+master(s) : 1 slave(s)
+IPNAME:plb_v46 INSTANCE:ppc405_0_dplb1 -
+/home/aalonso/workspace/ppc405/xilinx-ml405-ref/system.mhs line 231 - 1
+master(s) : 1 slave(s)
+
+Checking port drivers...
+WARNING:EDK:2098 - PORT:HostMiimRdy CONNECTOR:host_mii_rdy -
+   /opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_ll_temac_v2_03
+   _a/data/xps_ll_temac_v2_1_0.mpd line 262 - No driver found. Port will be
+   driven to GND!
+WARNING:EDK:2098 - PORT:HostRdData CONNECTOR:host_rd_data -
+   /opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_ll_temac_v2_03
+   _a/data/xps_ll_temac_v2_1_0.mpd line 263 - No driver found. Port will be
+   driven to GND!
+WARNING:EDK:2099 - PORT:HostMiimSel CONNECTOR:host_mii_sel -
+   /opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_ll_temac_v2_03
+   _a/data/xps_ll_temac_v2_1_0.mpd line 264 - floating connection!
+WARNING:EDK:2099 - PORT:HostReq CONNECTOR:host_req -
+   /opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_ll_temac_v2_03
+   _a/data/xps_ll_temac_v2_1_0.mpd line 265 - floating connection!
+WARNING:EDK:2099 - PORT:HostAddr CONNECTOR:host_addr -
+   /opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_ll_temac_v2_03
+   _a/data/xps_ll_temac_v2_1_0.mpd line 266 - floating connection!
+WARNING:EDK:2099 - PORT:HostEmac1Sel CONNECTOR:host_emac1_sel -
+   /opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_ll_temac_v2_03
+   _a/data/xps_ll_temac_v2_1_0.mpd line 267 - floating connection!
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+WARNING:EDK:1557 - IPNAME:ppc405_virtex4 INSTANCE:ppc405_0 -
+   /home/aalonso/workspace/ppc405/xilinx-ml405-ref/system.mhs line 68 -
+   PARAMETER C_FASTEST_PLB_CLOCK has value DPLB1 specified in MHS, but tcl is
+   overriding the value to DPLB0
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+Conversion to XML complete.

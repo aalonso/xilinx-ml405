@@ -1,0 +1,311 @@
+Release 12.1 - xst M.53d (lin64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> 
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "mgt_wrapper_wrapper_xst.prj"
+Verilog Include Directory          : {"/home/aalonso/workspace/ppc405/xilinx-ml405-ref/pcores/" "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/" }
+
+---- Target Parameters
+Target Device                      : xc4vfx20ff672-10
+Output File Name                   : "../implementation/mgt_wrapper_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : mgt_wrapper_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation/mgt_wrapper_wrapper}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mgt_protector_v1_00_a/hdl/vhdl/null_pair_example_top.vhd" in Library mgt_protector_v1_00_a.
+Entity <null_pair_example> compiled.
+Entity <null_pair_example> (Architecture <structure>) compiled.
+Compiling vhdl file "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mgt_protector_v1_00_a/hdl/vhdl/mgt_protector.vhd" in Library mgt_protector_v1_00_a.
+Entity <mgt_protector> compiled.
+Entity <mgt_protector> (Architecture <struct>) compiled.
+Compiling vhdl file "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/mgt_wrapper_wrapper.vhd" in Library work.
+Entity <mgt_wrapper_wrapper> compiled.
+Entity <mgt_wrapper_wrapper> (Architecture <STRUCTURE>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <mgt_wrapper_wrapper> in library <work> (architecture <STRUCTURE>).
+
+Analyzing hierarchy for entity <mgt_protector> in library <mgt_protector_v1_00_a> (architecture <struct>) with generics.
+	C_NUM_TILES = 4
+	C_USE_0 = '1'
+	C_USE_1 = '1'
+	C_USE_10 = '1'
+	C_USE_11 = '1'
+	C_USE_12 = '1'
+	C_USE_13 = '1'
+	C_USE_14 = '1'
+	C_USE_15 = '1'
+	C_USE_2 = '1'
+	C_USE_3 = '1'
+	C_USE_4 = '1'
+	C_USE_5 = '1'
+	C_USE_6 = '1'
+	C_USE_7 = '1'
+	C_USE_8 = '1'
+	C_USE_9 = '1'
+
+Analyzing hierarchy for entity <null_pair_example> in library <mgt_protector_v1_00_a> (architecture <structure>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <mgt_wrapper_wrapper> in library <work> (Architecture <STRUCTURE>).
+WARNING:Xst:2403 - Value of property "IP_GROUP" elaborates to a null string. The property will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2403 - Value of property "IP_GROUP" elaborates to a null string. The property will be ignored.
+Entity <mgt_wrapper_wrapper> analyzed. Unit <mgt_wrapper_wrapper> generated.
+
+Analyzing generic Entity <mgt_protector> in library <mgt_protector_v1_00_a> (Architecture <struct>).
+	C_NUM_TILES = 4
+	C_USE_0 = '1'
+	C_USE_1 = '1'
+	C_USE_10 = '1'
+	C_USE_11 = '1'
+	C_USE_12 = '1'
+	C_USE_13 = '1'
+	C_USE_14 = '1'
+	C_USE_15 = '1'
+	C_USE_2 = '1'
+	C_USE_3 = '1'
+	C_USE_4 = '1'
+	C_USE_5 = '1'
+	C_USE_6 = '1'
+	C_USE_7 = '1'
+	C_USE_8 = '1'
+	C_USE_9 = '1'
+WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
+Entity <mgt_protector> analyzed. Unit <mgt_protector> generated.
+
+Analyzing Entity <null_pair_example> in library <mgt_protector_v1_00_a> (Architecture <structure>).
+WARNING:Xst:753 - "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mgt_protector_v1_00_a/hdl/vhdl/null_pair_example_top.vhd" line 109: Unconnected output port 'TX1N_OUT' of component 'NULL_PAIR'.
+WARNING:Xst:753 - "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mgt_protector_v1_00_a/hdl/vhdl/null_pair_example_top.vhd" line 109: Unconnected output port 'TX1P_OUT' of component 'NULL_PAIR'.
+Entity <null_pair_example> analyzed. Unit <null_pair_example> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <null_pair_example>.
+    Related source file is "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mgt_protector_v1_00_a/hdl/vhdl/null_pair_example_top.vhd".
+    Found 2-bit tristate buffer for signal <$const0000>.
+    Found 2-bit tristate buffer for signal <$const0001>.
+    Summary:
+	inferred   4 Tristate(s).
+Unit <null_pair_example> synthesized.
+
+
+Synthesizing Unit <mgt_protector>.
+    Related source file is "/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mgt_protector_v1_00_a/hdl/vhdl/mgt_protector.vhd".
+Unit <mgt_protector> synthesized.
+
+
+Synthesizing Unit <mgt_wrapper_wrapper>.
+    Related source file is "/home/aalonso/workspace/ppc405/xilinx-ml405-ref/hdl/mgt_wrapper_wrapper.vhd".
+Unit <mgt_wrapper_wrapper> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Tristates                                            : 16
+ 1-bit tristate buffer                                 : 16
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <../implementation/mgt_wrapper_wrapper/NULL_PAIR.ngc>.
+Loading core <NULL_PAIR> for timing and area information for instance <null_pair_inst>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <mgt_wrapper_wrapper> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : ../implementation/mgt_wrapper_wrapper.ngc
+Output Format                      : ngc
+Optimization Goal                  : speed
+Keep Hierarchy                     : no
+
+Design Statistics
+# IOs                              : 1
+
+Cell Usage :
+# BELS                             : 9
+#      GND                         : 4
+#      VCC                         : 5
+# GigabitIOs                       : 8
+#      GT11                        : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 4vfx20ff672-10 
+
+ Number of Slices:                        0  out of   8544     0%  
+ Number of IOs:                           1
+ Number of bonded IOBs:                   0  out of    320     0%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-------------------------------------------------------------------+-----------------------------------------------------------------------------+-------+
+Clock Signal                                                       | Clock buffer(FF name)                                                       | Load  |
+-------------------------------------------------------------------+-----------------------------------------------------------------------------+-------+
+MGT_wrapper/g1[0].g2.pcore/null_pair_inst/N1                       | NONE(MGT_wrapper/g1[0].g2.pcore/null_pair_inst/GT11_INST_A/GT11_10GE_4_INST)| 2     |
+MGT_wrapper/g1[0].g2.pcore/null_pair_inst/GT11_INST_A/TXOUTCLK1_OUT| NONE(MGT_wrapper/g1[0].g2.pcore/null_pair_inst/GT11_INST_A/GT11_10GE_4_INST)| 1     |
+MGT_wrapper/g1[0].g2.pcore/null_pair_inst/GT11_INST_B/TXOUTCLK1_OUT| NONE(MGT_wrapper/g1[0].g2.pcore/null_pair_inst/GT11_INST_B/GT11_10GE_4_INST)| 1     |
+MGT_wrapper/g1[1].g2.pcore/null_pair_inst/N1                       | NONE(MGT_wrapper/g1[1].g2.pcore/null_pair_inst/GT11_INST_A/GT11_10GE_4_INST)| 2     |
+MGT_wrapper/g1[1].g2.pcore/null_pair_inst/GT11_INST_A/TXOUTCLK1_OUT| NONE(MGT_wrapper/g1[1].g2.pcore/null_pair_inst/GT11_INST_A/GT11_10GE_4_INST)| 1     |
+MGT_wrapper/g1[1].g2.pcore/null_pair_inst/GT11_INST_B/TXOUTCLK1_OUT| NONE(MGT_wrapper/g1[1].g2.pcore/null_pair_inst/GT11_INST_B/GT11_10GE_4_INST)| 1     |
+MGT_wrapper/g1[2].g2.pcore/null_pair_inst/N1                       | NONE(MGT_wrapper/g1[2].g2.pcore/null_pair_inst/GT11_INST_A/GT11_10GE_4_INST)| 2     |
+MGT_wrapper/g1[2].g2.pcore/null_pair_inst/GT11_INST_A/TXOUTCLK1_OUT| NONE(MGT_wrapper/g1[2].g2.pcore/null_pair_inst/GT11_INST_A/GT11_10GE_4_INST)| 1     |
+MGT_wrapper/g1[2].g2.pcore/null_pair_inst/GT11_INST_B/TXOUTCLK1_OUT| NONE(MGT_wrapper/g1[2].g2.pcore/null_pair_inst/GT11_INST_B/GT11_10GE_4_INST)| 1     |
+MGT_wrapper/g1[3].g2.pcore/null_pair_inst/N1                       | NONE(MGT_wrapper/g1[3].g2.pcore/null_pair_inst/GT11_INST_A/GT11_10GE_4_INST)| 2     |
+MGT_wrapper/g1[3].g2.pcore/null_pair_inst/GT11_INST_A/TXOUTCLK1_OUT| NONE(MGT_wrapper/g1[3].g2.pcore/null_pair_inst/GT11_INST_A/GT11_10GE_4_INST)| 1     |
+MGT_wrapper/g1[3].g2.pcore/null_pair_inst/GT11_INST_B/TXOUTCLK1_OUT| NONE(MGT_wrapper/g1[3].g2.pcore/null_pair_inst/GT11_INST_B/GT11_10GE_4_INST)| 1     |
+-------------------------------------------------------------------+-----------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+-------+
+Control Signal                                                                                   | Buffer(FF name)                                                             | Load  |
+-------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+-------+
+MGT_wrapper/g1[0].g2.pcore/null_pair_inst/N1(MGT_wrapper/g1[0].g2.pcore/null_pair_inst/XST_GND:G)| NONE(MGT_wrapper/g1[0].g2.pcore/null_pair_inst/GT11_INST_A/GT11_10GE_4_INST)| 52    |
+MGT_wrapper/g1[1].g2.pcore/null_pair_inst/N1(MGT_wrapper/g1[1].g2.pcore/null_pair_inst/XST_GND:G)| NONE(MGT_wrapper/g1[1].g2.pcore/null_pair_inst/GT11_INST_A/GT11_10GE_4_INST)| 52    |
+MGT_wrapper/g1[2].g2.pcore/null_pair_inst/N1(MGT_wrapper/g1[2].g2.pcore/null_pair_inst/XST_GND:G)| NONE(MGT_wrapper/g1[2].g2.pcore/null_pair_inst/GT11_INST_A/GT11_10GE_4_INST)| 52    |
+MGT_wrapper/g1[3].g2.pcore/null_pair_inst/N1(MGT_wrapper/g1[3].g2.pcore/null_pair_inst/XST_GND:G)| NONE(MGT_wrapper/g1[3].g2.pcore/null_pair_inst/GT11_INST_A/GT11_10GE_4_INST)| 52    |
+MGT_wrapper/g1[0].g2.pcore/null_pair_inst/N0(MGT_wrapper/g1[0].g2.pcore/null_pair_inst/XST_VCC:P)| NONE(MGT_wrapper/g1[0].g2.pcore/null_pair_inst/GT11_INST_A/GT11_10GE_4_INST)| 44    |
+MGT_wrapper/g1[1].g2.pcore/null_pair_inst/N0(MGT_wrapper/g1[1].g2.pcore/null_pair_inst/XST_VCC:P)| NONE(MGT_wrapper/g1[1].g2.pcore/null_pair_inst/GT11_INST_A/GT11_10GE_4_INST)| 44    |
+MGT_wrapper/g1[2].g2.pcore/null_pair_inst/N0(MGT_wrapper/g1[2].g2.pcore/null_pair_inst/XST_VCC:P)| NONE(MGT_wrapper/g1[2].g2.pcore/null_pair_inst/GT11_INST_A/GT11_10GE_4_INST)| 44    |
+MGT_wrapper/g1[3].g2.pcore/null_pair_inst/N0(MGT_wrapper/g1[3].g2.pcore/null_pair_inst/XST_VCC:P)| NONE(MGT_wrapper/g1[3].g2.pcore/null_pair_inst/GT11_INST_A/GT11_10GE_4_INST)| 44    |
+N1(XST_VCC:P)                                                                                    | NONE(MGT_wrapper/g1[0].g2.pcore/null_pair_inst/GT11_INST_A/GT11_10GE_4_INST)| 32    |
+-------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -10
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 10.21 secs
+ 
+--> 
+
+
+Total memory usage is 468392 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

@@ -1,0 +1,143 @@
+Release 12.1 Drc M.53d (lin64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Wed Jun 23 12:51:56 2010
+
+drc -z system.ncd system.pcf
+
+WARNING:PhysDesignRules:1843 - One or more MGTs are being used in this design.
+   Evaluate the SelectIO-To-MGT Crosstalk section of the Virtex-4 RocketIO
+   Multi-Gigabit Transceiver User Guide to ensure that the design SelectIO usage
+   meets the guidelines to minimize the impact on MGT performance. 
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   DCM_AUTOCALIBRATION_clock_generator_0/clock_generator_0/DCM0_INST/Using_DCM_A
+   DV.DCM_ADV_INST/clock_generator_0/clock_generator_0/DCM0_INST/Using_DCM_ADV.D
+   CM_ADV_INST/CLKOUT is sourced by a combinatorial pin. This is not good design
+   practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   DCM_AUTOCALIBRATION_clock_generator_0/clock_generator_0/DCM0_INST/Using_DCM_A
+   DV.DCM_ADV_INST/clock_generator_0/clock_generator_0/DCM0_INST/Using_DCM_ADV.D
+   CM_ADV_INST/cd/CLK<1> is sourced by a combinatorial pin. This is not good
+   design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   DCM_AUTOCALIBRATION_clock_generator_0/clock_generator_0/DCM0_INST/Using_DCM_A
+   DV.DCM_ADV_INST/clock_generator_0/clock_generator_0/DCM0_INST/Using_DCM_ADV.D
+   CM_ADV_INST/cd/CLK<2> is sourced by a combinatorial pin. This is not good
+   design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   DCM_AUTOCALIBRATION_clock_generator_0/clock_generator_0/DCM0_INST/Using_DCM_A
+   DV.DCM_ADV_INST/clock_generator_0/clock_generator_0/DCM0_INST/Using_DCM_ADV.D
+   CM_ADV_INST/cd/CLK<3> is sourced by a combinatorial pin. This is not good
+   design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   DCM_AUTOCALIBRATION_clock_generator_0/clock_generator_0/DCM0_INST/Using_DCM_A
+   DV.DCM_ADV_INST/clock_generator_0/clock_generator_0/DCM0_INST/Using_DCM_ADV.D
+   CM_ADV_INST/cd/CLK<4> is sourced by a combinatorial pin. This is not good
+   design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   DCM_AUTOCALIBRATION_clock_generator_0/clock_generator_0/DCM0_INST/Using_DCM_A
+   DV.DCM_ADV_INST/clock_generator_0/clock_generator_0/DCM0_INST/Using_DCM_ADV.D
+   CM_ADV_INST/cd/CLK<5> is sourced by a combinatorial pin. This is not good
+   design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   DCM_AUTOCALIBRATION_clock_generator_0/clock_generator_0/DCM0_INST/Using_DCM_A
+   DV.DCM_ADV_INST/clock_generator_0/clock_generator_0/DCM0_INST/Using_DCM_ADV.D
+   CM_ADV_INST/cd/CLK<6> is sourced by a combinatorial pin. This is not good
+   design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   DCM_AUTOCALIBRATION_clock_generator_0/clock_generator_0/DCM1_INST/Using_DCM_A
+   DV.DCM_ADV_INST/clock_generator_0/clock_generator_0/DCM1_INST/Using_DCM_ADV.D
+   CM_ADV_INST/CLKOUT is sourced by a combinatorial pin. This is not good design
+   practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   DCM_AUTOCALIBRATION_clock_generator_0/clock_generator_0/DCM1_INST/Using_DCM_A
+   DV.DCM_ADV_INST/clock_generator_0/clock_generator_0/DCM1_INST/Using_DCM_ADV.D
+   CM_ADV_INST/cd/CLK<1> is sourced by a combinatorial pin. This is not good
+   design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   DCM_AUTOCALIBRATION_clock_generator_0/clock_generator_0/DCM1_INST/Using_DCM_A
+   DV.DCM_ADV_INST/clock_generator_0/clock_generator_0/DCM1_INST/Using_DCM_ADV.D
+   CM_ADV_INST/cd/CLK<2> is sourced by a combinatorial pin. This is not good
+   design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   DCM_AUTOCALIBRATION_clock_generator_0/clock_generator_0/DCM1_INST/Using_DCM_A
+   DV.DCM_ADV_INST/clock_generator_0/clock_generator_0/DCM1_INST/Using_DCM_ADV.D
+   CM_ADV_INST/cd/CLK<3> is sourced by a combinatorial pin. This is not good
+   design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   DCM_AUTOCALIBRATION_clock_generator_0/clock_generator_0/DCM1_INST/Using_DCM_A
+   DV.DCM_ADV_INST/clock_generator_0/clock_generator_0/DCM1_INST/Using_DCM_ADV.D
+   CM_ADV_INST/cd/CLK<4> is sourced by a combinatorial pin. This is not good
+   design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   DCM_AUTOCALIBRATION_clock_generator_0/clock_generator_0/DCM1_INST/Using_DCM_A
+   DV.DCM_ADV_INST/clock_generator_0/clock_generator_0/DCM1_INST/Using_DCM_ADV.D
+   CM_ADV_INST/cd/CLK<5> is sourced by a combinatorial pin. This is not good
+   design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   DCM_AUTOCALIBRATION_clock_generator_0/clock_generator_0/DCM1_INST/Using_DCM_A
+   DV.DCM_ADV_INST/clock_generator_0/clock_generator_0/DCM1_INST/Using_DCM_ADV.D
+   CM_ADV_INST/cd/CLK<6> is sourced by a combinatorial pin. This is not good
+   design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:367 - The signal
+   <xps_bram_if_cntlr_1_port_BRAM_Addr<30>> is incomplete. The signal does not
+   drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <xps_bram_if_cntlr_1_port_BRAM_Addr<31>> is incomplete. The signal does not
+   drive any load pins in the design.
+INFO:PhysDesignRules:1437 - To achieve optimal frequency synthesis performance
+   with the CLKFX and CLKFX180 outputs of the DCM_ADV comp
+   DCM_AUTOCALIBRATION_clock_generator_0/clock_generator_0/DCM0_INST/Using_DCM_A
+   DV.DCM_ADV_INST/clock_generator_0/clock_generator_0/DCM0_INST/Using_DCM_ADV.D
+   CM_ADV_INST, consult the device Data Sheet.
+INFO:PhysDesignRules:1437 - To achieve optimal frequency synthesis performance
+   with the CLKFX and CLKFX180 outputs of the DCM_ADV comp
+   DCM_AUTOCALIBRATION_clock_generator_0/clock_generator_0/DCM1_INST/Using_DCM_A
+   DV.DCM_ADV_INST/clock_generator_0/clock_generator_0/DCM1_INST/Using_DCM_ADV.D
+   CM_ADV_INST, consult the device Data Sheet.
+WARNING:PhysDesignRules:367 - The signal <TX1N_OUT<0>_x_x_x/TX1N_OUT<0>_x_x_x>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <TX1N_OUT<0>_x_x/TX1N_OUT<0>_x_x> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <TX1N_OUT<0>_x/TX1N_OUT<0>_x> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <TX1N_OUT<0>/TX1N_OUT<0>> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <TX1N_OUT<1>_x_x_x/TX1N_OUT<1>_x_x_x>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <TX1N_OUT<1>_x_x/TX1N_OUT<1>_x_x> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <TX1N_OUT<1>_x/TX1N_OUT<1>_x> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <TX1N_OUT<1>/TX1N_OUT<1>> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <TX1P_OUT<0>_x_x_x/TX1P_OUT<0>_x_x_x>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <TX1P_OUT<0>_x_x/TX1P_OUT<0>_x_x> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <TX1P_OUT<0>_x/TX1P_OUT<0>_x> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <TX1P_OUT<0>/TX1P_OUT<0>> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <TX1P_OUT<1>_x_x_x/TX1P_OUT<1>_x_x_x>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <TX1P_OUT<1>_x_x/TX1P_OUT<1>_x_x> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <TX1P_OUT<1>_x/TX1P_OUT<1>_x> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <TX1P_OUT<1>/TX1P_OUT<1>> is
+   incomplete. The signal does not drive any load pins in the design.
+DRC detected 0 errors and 33 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

@@ -1,0 +1,632 @@
+Release 12.1 Map M.53d (lin64)
+Xilinx Map Application Log File for Design 'system'
+
+Design Information
+------------------
+Command Line   : map -o system_map.ncd -pr b -ol high -timing -detail system.ngd
+system.pcf 
+Target Device  : xc4vfx20
+Target Package : ff672
+Target Speed   : -10
+Mapper Version : virtex4 -- $Revision: 1.52 $
+Mapped Date    : Wed Jun 23 12:43:22 2010
+
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+INFO:Security:67 - XILINXD_LICENSE_FILE is set to
+'/opt/Xilinx/12.1/ISE_DS/EDK/data/core_licenses:/opt/Xilinx/11.5/EDK/data/core_l
+icenses' in /home/aalonso/.flexlmrc.
+INFO:Security:56 - Part 'xc4vfx20' is not a WebPack part.
+INFO:Security:66 - Your license for 'ISE' is for evaluation use only.
+WARNING:Security:42 - Your license support version '2010.06' for ISE expires in
+6 days after which you will not qualify for Xilinx software updates or new
+releases.
+----------------------------------------------------------------------
+Mapping design into LUTs...
+WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFG symbol
+   "clock_generator_0/clock_generator_0/DCM0_CLK0_BUFG_INST" (output
+   signal=clk_100_0000MHzDCM0) has a mix of clock and non-clock loads. The
+   non-clock loads are:
+   Pin I0 of
+   DCM_AUTOCALIBRATION_clock_generator_0/clock_generator_0/DCM0_INST/Using_DCM_A
+   DV.DCM_ADV_INST/clock_generator_0/clock_generator_0/DCM0_INST/Using_DCM_ADV.D
+   CM_ADV_INST/md/_n00001
+   Pin I1 of
+   DCM_AUTOCALIBRATION_clock_generator_0/clock_generator_0/DCM0_INST/Using_DCM_A
+   DV.DCM_ADV_INST/clock_generator_0/clock_generator_0/DCM0_INST/Using_DCM_ADV.D
+   CM_ADV_INST/md/_n00011
+WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFG symbol
+   "clock_generator_0/clock_generator_0/DCM1_CLK0_BUFG_INST" (output
+   signal=clock_generator_0/clock_generator_0/SIG_DCM1_CLK0_BUF) has a mix of
+   clock and non-clock loads. The non-clock loads are:
+   Pin I0 of
+   DCM_AUTOCALIBRATION_clock_generator_0/clock_generator_0/DCM1_INST/Using_DCM_A
+   DV.DCM_ADV_INST/clock_generator_0/clock_generator_0/DCM1_INST/Using_DCM_ADV.D
+   CM_ADV_INST/md/_n00001
+   Pin I1 of
+   DCM_AUTOCALIBRATION_clock_generator_0/clock_generator_0/DCM1_INST/Using_DCM_A
+   DV.DCM_ADV_INST/clock_generator_0/clock_generator_0/DCM1_INST/Using_DCM_ADV.D
+   CM_ADV_INST/md/_n00011
+Writing file system_map.ngm...
+Running directed packing...
+WARNING:Pack:266 - The function generator
+   TriMode_MAC_GMII/TriMode_MAC_GMII/I_REGISTERS/dCR_Read01 failed to merge with
+   F5 multiplexer
+   TriMode_MAC_GMII/TriMode_MAC_GMII/I_REGISTERS/IP2Bus_Data<23>121_f5.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator
+   TriMode_MAC_GMII/TriMode_MAC_GMII/I_REGISTERS/dCR_Read01 failed to merge with
+   F5 multiplexer
+   TriMode_MAC_GMII/TriMode_MAC_GMII/I_REGISTERS/IP2Bus_Data<16>115_f5.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator
+   DDR_SDRAM/DDR_SDRAM/SDMA2_INST.mpmc_sdma_2/comp_sdma/DMA_DATA_I/COMP_DMAC_Reg
+   File[5].LUT_RAM failed to merge with F5 multiplexer
+   DDR_SDRAM/DDR_SDRAM/SDMA2_INST.mpmc_sdma_2/comp_sdma/DMA_DATA_I/COMP_RX_ADDRE
+   SS_COUNTER/address_out_i_5_mux000011_SW2.  There is more than one F5MUX.  The
+   design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator
+   DDR_SDRAM/DDR_SDRAM/SDMA2_INST.mpmc_sdma_2/comp_sdma/DMA_DATA_I/COMP_DMAC_Reg
+   File[4].LUT_RAM failed to merge with F5 multiplexer
+   DDR_SDRAM/DDR_SDRAM/SDMA2_INST.mpmc_sdma_2/comp_sdma/DMA_DATA_I/COMP_TX_ADDRE
+   SS_COUNTER/address_out_i_4_mux0000_f5.  There is more than one F5MUX.  The
+   design will exhibit suboptimal timing.
+Running delay-based LUT packing...
+Updating timing models...
+WARNING:Timing:3223 - Timing constraint TS_RXPHY0_2_PLB = MAXDELAY FROM TIMEGRP
+   "phy_clk_rx0" TO TIMEGRP "PLBCLK" 10 ns DATAPATHONLY ignored during timing
+   analysis.
+WARNING:Timing:3223 - Timing constraint TS_REF_CLK_2_PLB_CLIENT_CLK = MAXDELAY
+   FROM TIMEGRP "REFCLK" TO TIMEGRP "PLBCLK" 10 ns DATAPATHONLY ignored during
+   timing analysis.
+WARNING:Timing:3223 - Timing constraint TS_PLB_CLIENT_CLK_2_REF_CLK = MAXDELAY
+   FROM TIMEGRP "PLBCLK" TO TIMEGRP "REFCLK" 5 ns DATAPATHONLY ignored during
+   timing analysis.
+WARNING:Timing:3223 - Timing constraint TS_REF_CLK_2_TX_CLIENT_CLK0 = MAXDELAY
+   FROM TIMEGRP "REFCLK" TO TIMEGRP "clk_client_tx0" 8 ns DATAPATHONLY ignored
+   during timing analysis.
+WARNING:Timing:3223 - Timing constraint TS_TX_CLIENT_CLK0_2_REF_CLK = MAXDELAY
+   FROM TIMEGRP "clk_client_tx0" TO TIMEGRP "REFCLK" 5 ns DATAPATHONLY ignored
+   during timing analysis.
+WARNING:Timing:3223 - Timing constraint TS_REF_CLK_2_RX_CLIENT_CLK0 = MAXDELAY
+   FROM TIMEGRP "REFCLK" TO TIMEGRP "clk_client_rx0" 8 ns DATAPATHONLY ignored
+   during timing analysis.
+WARNING:Timing:3223 - Timing constraint TS_RX_CLIENT_CLK0_2_REF_CLK = MAXDELAY
+   FROM TIMEGRP "clk_client_rx0" TO TIMEGRP "REFCLK" 5 ns DATAPATHONLY ignored
+   during timing analysis.
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 1 mins 
+Total CPU  time at the beginning of Placer: 57 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:fea3af61) REAL time: 1 mins 4 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:fea3af61) REAL time: 1 mins 4 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:eb2f0881) REAL time: 1 mins 4 secs 
+
+Phase 4.2  Initial Clock and IO Placement
+
+WARNING:Place:851 - The delay controller
+   "TriMode_MAC_GMII/TriMode_MAC_GMII/V4HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/
+   YES_IO_0.GEN_INSTANTIATE_IDELAYCTRLS[0].idelayctrl0" has been locked with the
+   following location constraint:
+   	COMP
+   "TriMode_MAC_GMII/TriMode_MAC_GMII/V4HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/
+   YES_IO_0.GEN_INSTANTIATE_IDELAYCTRLS[0].idelayctrl0" LOCATE =  SITE
+   "IDELAYCTRL_X1Y1" LEVEL 1
+   However, none of the delay elements calibrated by this controller are being
+   used. The controller will still use up a global clock resource from the clock
+   region and consume power. Please refer to the usage document to use the
+   controller efficiently.
+Phase 4.2  Initial Clock and IO Placement (Checksum:8df7af21) REAL time: 1 mins 7 secs 
+
+Phase 5.36  Local Placement Optimization
+Phase 5.36  Local Placement Optimization (Checksum:8df7af21) REAL time: 1 mins 7 secs 
+
+
+......................
+..........................................................................................
+Phase 6.30  Global Clock Region Assignment
+
+
+######################################################################################
+# GLOBAL CLOCK NET DISTRIBUTION UCF REPORT:
+#
+# Number of Global Clock Regions : 8
+# Number of Global Clock Networks: 11
+#
+# Clock Region Assignment: SUCCESSFUL
+
+# Location of Clock Components
+INST "clock_generator_0/clock_generator_0/DCM0_CLKFX_BUFG_INST" LOC = "BUFGCTRL_X0Y2" ;
+INST "clock_generator_0/clock_generator_0/DCM0_CLK90_BUFG_INST" LOC = "BUFGCTRL_X0Y1" ;
+INST "TriMode_MAC_GMII/TriMode_MAC_GMII/V4HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/tx_client_clk_0_bufg" LOC = "BUFGCTRL_X0Y28" ;
+INST "clock_generator_0/clock_generator_0/DCM1_CLK2X_BUFG_INST" LOC = "BUFGCTRL_X0Y4" ;
+INST "TriMode_MAC_GMII/TriMode_MAC_GMII/V4HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/tx_gmii_mii_clk_0_bufg" LOC = "BUFGCTRL_X0Y31" ;
+INST "fpga_0_SysACE_CompactFlash_SysACE_CLK_pin_BUFGP/BUFG" LOC = "BUFGCTRL_X0Y6" ;
+INST "TriMode_MAC_GMII/TriMode_MAC_GMII/V4HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/rx_client_clk_0_bufg" LOC = "BUFGCTRL_X0Y29" ;
+INST "clock_generator_0/clock_generator_0/DCM0_CLK0_BUFG_INST" LOC = "BUFGCTRL_X0Y0" ;
+INST "clock_generator_0/clock_generator_0/DCM1_CLKFX_BUFG_INST" LOC = "BUFGCTRL_X0Y5" ;
+INST "TriMode_MAC_GMII/TriMode_MAC_GMII/V4HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/YES_IO_0a.gmii_rx_clk_0_bufg" LOC = "BUFGCTRL_X0Y30" ;
+INST "clock_generator_0/clock_generator_0/DCM1_CLK0_BUFG_INST" LOC = "BUFGCTRL_X0Y3" ;
+INST "DCM_AUTOCALIBRATION_clock_generator_0/clock_generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST/clock_generator_0/clock_generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST" LOC = "DCM_ADV_X0Y0" ;
+INST "DCM_AUTOCALIBRATION_clock_generator_0/clock_generator_0/DCM1_INST/Using_DCM_ADV.DCM_ADV_INST/clock_generator_0/clock_generator_0/DCM1_INST/Using_DCM_ADV.DCM_ADV_INST" LOC = "DCM_ADV_X0Y1" ;
+INST "XIL_ML_UNUSED_DCM_1" LOC = "DCM_ADV_X0Y2" ;
+INST "XIL_ML_UNUSED_DCM_2" LOC = "DCM_ADV_X0Y3" ;
+INST "fpga_0_clk_1_sys_clk_pin" LOC = "AB14" ;
+INST "fpga_0_TriMode_MAC_GMII_MII_TX_CLK_0_pin" LOC = "D15" ;
+INST "fpga_0_SysACE_CompactFlash_SysACE_CLK_pin" LOC = "AE13" ;
+INST "fpga_0_TriMode_MAC_GMII_GMII_RX_CLK_0_pin" LOC = "F15" ;
+INST "MGT_wrapper/RX1N_IN<0>_x_x_x" LOC = "IPAD_X1Y1" ;
+INST "MGT_wrapper/RX1N_IN<1>_x_x_x" LOC = "IPAD_X1Y5" ;
+INST "MGT_wrapper/RX1N_IN<0>_x" LOC = "IPAD_X0Y1" ;
+INST "MGT_wrapper/RX1N_IN<1>_x" LOC = "IPAD_X0Y5" ;
+INST "MGT_wrapper/RX1P_IN<0>_x" LOC = "IPAD_X0Y0" ;
+INST "MGT_wrapper/RX1P_IN<1>_x" LOC = "IPAD_X0Y4" ;
+INST "MGT_wrapper/RX1N_IN<0>_x_x" LOC = "IPAD_X1Y7" ;
+INST "MGT_wrapper/RX1N_IN<1>_x_x" LOC = "IPAD_X1Y11" ;
+INST "MGT_wrapper/RX1N_IN<0>" LOC = "IPAD_X0Y7" ;
+INST "MGT_wrapper/RX1N_IN<1>" LOC = "IPAD_X0Y11" ;
+INST "MGT_wrapper/RX1P_IN<0>" LOC = "IPAD_X0Y6" ;
+INST "MGT_wrapper/RX1P_IN<1>" LOC = "IPAD_X0Y10" ;
+INST "MGT_wrapper/RX1P_IN<0>_x_x_x" LOC = "IPAD_X1Y0" ;
+INST "MGT_wrapper/RX1P_IN<1>_x_x_x" LOC = "IPAD_X1Y4" ;
+INST "MGT_wrapper/RX1P_IN<0>_x_x" LOC = "IPAD_X1Y6" ;
+INST "MGT_wrapper/RX1P_IN<1>_x_x" LOC = "IPAD_X1Y10" ;
+INST "MGT_wrapper/MGT_wrapper/g1[3].g2.pcore/null_pair_inst/GT11_INST_A/GT11_10GE_4_INST" LOC = "GT11_X1Y1" ;
+INST "MGT_wrapper/MGT_wrapper/g1[2].g2.pcore/null_pair_inst/GT11_INST_A/GT11_10GE_4_INST" LOC = "GT11_X1Y3" ;
+INST "MGT_wrapper/MGT_wrapper/g1[1].g2.pcore/null_pair_inst/GT11_INST_A/GT11_10GE_4_INST" LOC = "GT11_X0Y1" ;
+INST "MGT_wrapper/MGT_wrapper/g1[0].g2.pcore/null_pair_inst/GT11_INST_A/GT11_10GE_4_INST" LOC = "GT11_X0Y3" ;
+INST "MGT_wrapper/MGT_wrapper/g1[3].g2.pcore/null_pair_inst/GT11_INST_B/GT11_10GE_4_INST" LOC = "GT11_X1Y0" ;
+INST "MGT_wrapper/MGT_wrapper/g1[2].g2.pcore/null_pair_inst/GT11_INST_B/GT11_10GE_4_INST" LOC = "GT11_X1Y2" ;
+INST "MGT_wrapper/MGT_wrapper/g1[1].g2.pcore/null_pair_inst/GT11_INST_B/GT11_10GE_4_INST" LOC = "GT11_X0Y0" ;
+INST "MGT_wrapper/MGT_wrapper/g1[0].g2.pcore/null_pair_inst/GT11_INST_B/GT11_10GE_4_INST" LOC = "GT11_X0Y2" ;
+INST "TX1N_OUT<0>_x_x_x" LOC = "OPAD_X1Y1" ;
+INST "TX1N_OUT<0>_x_x" LOC = "OPAD_X1Y5" ;
+INST "TX1N_OUT<0>_x" LOC = "OPAD_X0Y1" ;
+INST "TX1N_OUT<0>" LOC = "OPAD_X0Y5" ;
+INST "TX1N_OUT<1>_x_x_x" LOC = "OPAD_X1Y3" ;
+INST "TX1N_OUT<1>_x_x" LOC = "OPAD_X1Y7" ;
+INST "TX1N_OUT<1>_x" LOC = "OPAD_X0Y3" ;
+INST "TX1N_OUT<1>" LOC = "OPAD_X0Y7" ;
+INST "TX1P_OUT<0>_x_x_x" LOC = "OPAD_X1Y0" ;
+INST "TX1P_OUT<0>_x_x" LOC = "OPAD_X1Y4" ;
+INST "TX1P_OUT<0>_x" LOC = "OPAD_X0Y0" ;
+INST "TX1P_OUT<0>" LOC = "OPAD_X0Y4" ;
+INST "TX1P_OUT<1>_x_x_x" LOC = "OPAD_X1Y2" ;
+INST "TX1P_OUT<1>_x_x" LOC = "OPAD_X1Y6" ;
+INST "TX1P_OUT<1>_x" LOC = "OPAD_X0Y2" ;
+INST "TX1P_OUT<1>" LOC = "OPAD_X0Y6" ;
+
+# clk_300_0000MHzDCM0 driven by BUFGCTRL_X0Y2
+NET "clk_300_0000MHzDCM0" TNM_NET = "TN_clk_300_0000MHzDCM0" ;
+TIMEGRP "TN_clk_300_0000MHzDCM0" AREA_GROUP = "CLKAG_clk_300_0000MHzDCM0" ;
+AREA_GROUP "CLKAG_clk_300_0000MHzDCM0" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3 ;
+
+# clk_100_0000MHz90DCM0 driven by BUFGCTRL_X0Y1
+NET "clk_100_0000MHz90DCM0" TNM_NET = "TN_clk_100_0000MHz90DCM0" ;
+TIMEGRP "TN_clk_100_0000MHz90DCM0" AREA_GROUP = "CLKAG_clk_100_0000MHz90DCM0" ;
+AREA_GROUP "CLKAG_clk_100_0000MHz90DCM0" RANGE =   CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3 ;
+
+# TriMode_MAC_GMII/TriMode_MAC_GMII/V4HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/tx_client_clk_in_0_i driven by BUFGCTRL_X0Y28
+NET "TriMode_MAC_GMII/TriMode_MAC_GMII/V4HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/tx_client_clk_in_0_i" TNM_NET = "TN_TriMode_MAC_GMII/TriMode_MAC_GMII/V4HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/tx_client_clk_in_0_i" ;
+TIMEGRP "TN_TriMode_MAC_GMII/TriMode_MAC_GMII/V4HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/tx_client_clk_in_0_i" AREA_GROUP = "CLKAG_TriMode_MAC_GMII/TriMode_MAC_GMII/V4HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/tx_client_clk_in_0_i" ;
+AREA_GROUP "CLKAG_TriMode_MAC_GMII/TriMode_MAC_GMII/V4HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/tx_client_clk_in_0_i" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3 ;
+
+# clk_200_0000MHz driven by BUFGCTRL_X0Y4
+NET "clk_200_0000MHz" TNM_NET = "TN_clk_200_0000MHz" ;
+TIMEGRP "TN_clk_200_0000MHz" AREA_GROUP = "CLKAG_clk_200_0000MHz" ;
+AREA_GROUP "CLKAG_clk_200_0000MHz" RANGE =   CLOCKREGION_X0Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3 ;
+
+# TriMode_MAC_GMII/TriMode_MAC_GMII/V4HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/tx_gmii_mii_clk_in_0_i driven by BUFGCTRL_X0Y31
+NET "TriMode_MAC_GMII/TriMode_MAC_GMII/V4HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/tx_gmii_mii_clk_in_0_i" TNM_NET = "TN_TriMode_MAC_GMII/TriMode_MAC_GMII/V4HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/tx_gmii_mii_clk_in_0_i" ;
+TIMEGRP "TN_TriMode_MAC_GMII/TriMode_MAC_GMII/V4HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/tx_gmii_mii_clk_in_0_i" AREA_GROUP = "CLKAG_TriMode_MAC_GMII/TriMode_MAC_GMII/V4HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/tx_gmii_mii_clk_in_0_i" ;
+AREA_GROUP "CLKAG_TriMode_MAC_GMII/TriMode_MAC_GMII/V4HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/tx_gmii_mii_clk_in_0_i" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3 ;
+
+# fpga_0_SysACE_CompactFlash_SysACE_CLK_pin_BUFGP driven by BUFGCTRL_X0Y6
+NET "fpga_0_SysACE_CompactFlash_SysACE_CLK_pin_BUFGP" TNM_NET = "TN_fpga_0_SysACE_CompactFlash_SysACE_CLK_pin_BUFGP" ;
+TIMEGRP "TN_fpga_0_SysACE_CompactFlash_SysACE_CLK_pin_BUFGP" AREA_GROUP = "CLKAG_fpga_0_SysACE_CompactFlash_SysACE_CLK_pin_BUFGP" ;
+AREA_GROUP "CLKAG_fpga_0_SysACE_CompactFlash_SysACE_CLK_pin_BUFGP" RANGE =   CLOCKREGION_X1Y0, CLOCKREGION_X1Y1 ;
+
+# TriMode_MAC_GMII/TriMode_MAC_GMII/V4HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/rx_client_clk_in_0_i driven by BUFGCTRL_X0Y29
+NET "TriMode_MAC_GMII/TriMode_MAC_GMII/V4HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/rx_client_clk_in_0_i" TNM_NET = "TN_TriMode_MAC_GMII/TriMode_MAC_GMII/V4HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/rx_client_clk_in_0_i" ;
+TIMEGRP "TN_TriMode_MAC_GMII/TriMode_MAC_GMII/V4HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/rx_client_clk_in_0_i" AREA_GROUP = "CLKAG_TriMode_MAC_GMII/TriMode_MAC_GMII/V4HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/rx_client_clk_in_0_i" ;
+AREA_GROUP "CLKAG_TriMode_MAC_GMII/TriMode_MAC_GMII/V4HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/rx_client_clk_in_0_i" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3 ;
+
+# clk_100_0000MHzDCM0 driven by BUFGCTRL_X0Y0
+NET "clk_100_0000MHzDCM0" TNM_NET = "TN_clk_100_0000MHzDCM0" ;
+TIMEGRP "TN_clk_100_0000MHzDCM0" AREA_GROUP = "CLKAG_clk_100_0000MHzDCM0" ;
+AREA_GROUP "CLKAG_clk_100_0000MHzDCM0" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3 ;
+
+# clk_125_0000MHz driven by BUFGCTRL_X0Y5
+NET "clk_125_0000MHz" TNM_NET = "TN_clk_125_0000MHz" ;
+TIMEGRP "TN_clk_125_0000MHz" AREA_GROUP = "CLKAG_clk_125_0000MHz" ;
+AREA_GROUP "CLKAG_clk_125_0000MHz" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X0Y1 ;
+
+# TriMode_MAC_GMII/TriMode_MAC_GMII/V4HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/gmii_rx_clk_0_i driven by BUFGCTRL_X0Y30
+NET "TriMode_MAC_GMII/TriMode_MAC_GMII/V4HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/gmii_rx_clk_0_i" TNM_NET = "TN_TriMode_MAC_GMII/TriMode_MAC_GMII/V4HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/gmii_rx_clk_0_i" ;
+TIMEGRP "TN_TriMode_MAC_GMII/TriMode_MAC_GMII/V4HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/gmii_rx_clk_0_i" AREA_GROUP = "CLKAG_TriMode_MAC_GMII/TriMode_MAC_GMII/V4HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/gmii_rx_clk_0_i" ;
+AREA_GROUP "CLKAG_TriMode_MAC_GMII/TriMode_MAC_GMII/V4HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/gmii_rx_clk_0_i" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3 ;
+
+# clock_generator_0/clock_generator_0/SIG_DCM1_CLK0_BUF driven by BUFGCTRL_X0Y3
+NET "clock_generator_0/clock_generator_0/SIG_DCM1_CLK0_BUF" TNM_NET = "TN_clock_generator_0/clock_generator_0/SIG_DCM1_CLK0_BUF" ;
+TIMEGRP "TN_clock_generator_0/clock_generator_0/SIG_DCM1_CLK0_BUF" AREA_GROUP = "CLKAG_clock_generator_0/clock_generator_0/SIG_DCM1_CLK0_BUF" ;
+AREA_GROUP "CLKAG_clock_generator_0/clock_generator_0/SIG_DCM1_CLK0_BUF" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X1Y1 ;
+
+# NOTE: 
+# This report is provided to help reproduce successful clock-region 
+# assignments. The report provides range constraints for all global 
+# clock networks, in a format that is directly usable in ucf files. 
+#
+#END of Global Clock Net Distribution UCF Constraints
+######################################################################################
+
+
+######################################################################################
+GLOBAL CLOCK NET LOADS DISTRIBUTION REPORT:
+
+Number of Global Clock Regions : 8
+Number of Global Clock Networks: 11
+
+Clock Region Assignment: SUCCESSFUL
+
+Clock-Region: <CLOCKREGION_X0Y0> 
+ key resource utilizations (used/available): global-clocks - 5/8 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |   PMCD |     GT | ILOGIC | OLOGIC |   MULT |   EMAC |    PPC |   PCIE | IDLYCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     20 |      2 |      0 |      1 |     48 |     48 |      0 |      1 |      1 |      0 |      2 |   1040 |   2080 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      2 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    185 |TriMode_MAC_GMII/TriMode_MAC_GMII/V4HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/rx_client_clk_in_0_i
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |TriMode_MAC_GMII/TriMode_MAC_GMII/V4HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/tx_client_clk_in_0_i
+      3 |      1 |      0 |      1 |      0 |      0 |      0 |      0 |      1 |      0 |      0 |     95 |    865 |clk_100_0000MHzDCM0
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |clk_300_0000MHzDCM0
+      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |clock_generator_0/clock_generator_0/SIG_DCM1_CLK0_BUF
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      5 |      2 |      0 |      1 |      0 |      0 |      0 |      0 |      2 |      0 |      0 |     95 |   1052 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X1Y0> 
+ key resource utilizations (used/available): global-clocks - 3/8 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |   PMCD |     GT | ILOGIC | OLOGIC |   MULT |   EMAC |    PPC |   PCIE | IDLYCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     16 |      0 |      0 |      1 |     32 |     32 |      8 |      0 |      0 |      0 |      1 |   1152 |   2304 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |TriMode_MAC_GMII/TriMode_MAC_GMII/V4HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/rx_client_clk_in_0_i
+      6 |      0 |      0 |      1 |      0 |      7 |      0 |      0 |      0 |      0 |      0 |     20 |   1087 |clk_100_0000MHzDCM0
+      0 |      0 |      0 |      0 |     11 |     19 |      0 |      0 |      0 |      0 |      0 |      0 |     31 |fpga_0_SysACE_CompactFlash_SysACE_CLK_pin_BUFGP
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      6 |      0 |      0 |      1 |     11 |     26 |      0 |      0 |      0 |      0 |      0 |     20 |   1119 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X0Y1> 
+ key resource utilizations (used/available): global-clocks - 4/8 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |   PMCD |     GT | ILOGIC | OLOGIC |   MULT |   EMAC |    PPC |   PCIE | IDLYCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      8 |      0 |      0 |      1 |     48 |     48 |      0 |      1 |      1 |      0 |      2 |    704 |   1408 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      9 |TriMode_MAC_GMII/TriMode_MAC_GMII/V4HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/rx_client_clk_in_0_i
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      6 |TriMode_MAC_GMII/TriMode_MAC_GMII/V4HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/tx_client_clk_in_0_i
+      2 |      0 |      0 |      1 |     16 |     16 |      0 |      0 |      0 |      0 |      0 |     57 |    787 |clk_100_0000MHzDCM0
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |      0 |      0 |clk_200_0000MHz
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      2 |      0 |      0 |      1 |     16 |     16 |      0 |      0 |      0 |      0 |      1 |     57 |    802 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X1Y1> 
+ key resource utilizations (used/available): global-clocks - 3/8 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |   PMCD |     GT | ILOGIC | OLOGIC |   MULT |   EMAC |    PPC |   PCIE | IDLYCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     16 |      0 |      0 |      1 |     32 |     32 |      8 |      0 |      0 |      0 |      1 |   1152 |   2304 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      7 |TriMode_MAC_GMII/TriMode_MAC_GMII/V4HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/tx_gmii_mii_clk_in_0_i
+      8 |      0 |      0 |      1 |      0 |     16 |      0 |      0 |      0 |      0 |      0 |     19 |   1156 |clk_100_0000MHzDCM0
+      0 |      0 |      0 |      0 |      5 |      6 |      0 |      0 |      0 |      0 |      0 |      0 |      5 |fpga_0_SysACE_CompactFlash_SysACE_CLK_pin_BUFGP
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      8 |      0 |      0 |      1 |      5 |     22 |      0 |      0 |      0 |      0 |      0 |     19 |   1168 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X0Y2> 
+ key resource utilizations (used/available): global-clocks - 4/8 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |   PMCD |     GT | ILOGIC | OLOGIC |   MULT |   EMAC |    PPC |   PCIE | IDLYCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     20 |      0 |      0 |      1 |     48 |     48 |      0 |      1 |      1 |      0 |      2 |   1040 |   2080 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     36 |TriMode_MAC_GMII/TriMode_MAC_GMII/V4HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/tx_client_clk_in_0_i
+      0 |      0 |      0 |      0 |      0 |     14 |      0 |      0 |      0 |      0 |      0 |      1 |     15 |clk_100_0000MHz90DCM0
+      9 |      0 |      0 |      1 |     29 |     32 |      0 |      0 |      0 |      0 |      0 |     82 |   1096 |clk_100_0000MHzDCM0
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |      0 |      0 |clk_200_0000MHz
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     10 |      0 |      0 |      1 |     29 |     46 |      0 |      0 |      0 |      0 |      1 |     83 |   1147 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X1Y2> 
+ key resource utilizations (used/available): global-clocks - 4/8 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |   PMCD |     GT | ILOGIC | OLOGIC |   MULT |   EMAC |    PPC |   PCIE | IDLYCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     16 |      0 |      0 |      1 |     32 |     32 |      8 |      0 |      0 |      0 |      1 |   1152 |   2304 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      0 |      0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |TriMode_MAC_GMII/TriMode_MAC_GMII/V4HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/gmii_rx_clk_0_i
+      0 |      0 |      0 |      0 |      0 |      6 |      0 |      0 |      0 |      0 |      0 |      0 |      3 |TriMode_MAC_GMII/TriMode_MAC_GMII/V4HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/tx_gmii_mii_clk_in_0_i
+      8 |      0 |      0 |      1 |      0 |      9 |      0 |      0 |      0 |      0 |      0 |     48 |   1156 |clk_100_0000MHzDCM0
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |      1 |      0 |clk_200_0000MHz
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      8 |      0 |      0 |      1 |      1 |     15 |      0 |      0 |      0 |      0 |      1 |     49 |   1159 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X0Y3> 
+ key resource utilizations (used/available): global-clocks - 3/8 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |   PMCD |     GT | ILOGIC | OLOGIC |   MULT |   EMAC |    PPC |   PCIE | IDLYCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     24 |      2 |      0 |      1 |     48 |     48 |      0 |      0 |      0 |      0 |      2 |   1152 |   2304 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      0 |      0 |      0 |      0 |      0 |     22 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |clk_100_0000MHz90DCM0
+      8 |      0 |      0 |      1 |     21 |     12 |      0 |      0 |      0 |      0 |      0 |     58 |   1302 |clk_100_0000MHzDCM0
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |      0 |      0 |clk_200_0000MHz
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      8 |      0 |      0 |      1 |     21 |     34 |      0 |      0 |      0 |      0 |      2 |     58 |   1302 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X1Y3> 
+ key resource utilizations (used/available): global-clocks - 4/8 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |   PMCD |     GT | ILOGIC | OLOGIC |   MULT |   EMAC |    PPC |   PCIE | IDLYCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     16 |      0 |      0 |      1 |     32 |     32 |      8 |      0 |      0 |      0 |      1 |   1152 |   2304 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      0 |      0 |      0 |      0 |      9 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |TriMode_MAC_GMII/TriMode_MAC_GMII/V4HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/gmii_rx_clk_0_i
+      0 |      0 |      0 |      0 |      0 |      5 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |TriMode_MAC_GMII/TriMode_MAC_GMII/V4HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/tx_gmii_mii_clk_in_0_i
+      5 |      0 |      0 |      1 |      0 |      3 |      0 |      0 |      0 |      0 |      0 |     47 |    950 |clk_100_0000MHzDCM0
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |      0 |      0 |clk_200_0000MHz
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      5 |      0 |      0 |      1 |      9 |      8 |      0 |      0 |      0 |      0 |      1 |     47 |    950 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+NOTE:
+The above detailed report is the initial placement of the logic after the clock region assignment. The final placement
+may be significantly different because of the various optimization steps which will follow. Specifically, logic blocks
+maybe moved to adjacent clock-regions as long as the "number of clocks per region" constraint is not violated.
+
+
+# END of Global Clock Net Loads Distribution Report:
+######################################################################################
+
+
+Phase 6.30  Global Clock Region Assignment (Checksum:4bc381c7) REAL time: 1 mins 56 secs 
+
+Phase 7.3  Local Placement Optimization
+Phase 7.3  Local Placement Optimization (Checksum:4bc381c7) REAL time: 1 mins 57 secs 
+
+Phase 8.5  Local Placement Optimization
+Phase 8.5  Local Placement Optimization (Checksum:4bc381c7) REAL time: 1 mins 57 secs 
+
+Phase 9.8  Global Placement
+............................
+..........................................................................................................
+..........................................
+.....................................................................................................................
+.......................................
+.......................................
+................
+.................
+Phase 9.8  Global Placement (Checksum:73476fa1) REAL time: 3 mins 29 secs 
+
+Phase 10.5  Local Placement Optimization
+Phase 10.5  Local Placement Optimization (Checksum:73476fa1) REAL time: 3 mins 31 secs 
+
+Phase 11.18  Placement Optimization
+Phase 11.18  Placement Optimization (Checksum:d88844e9) REAL time: 5 mins 35 secs 
+
+Phase 12.5  Local Placement Optimization
+Phase 12.5  Local Placement Optimization (Checksum:d88844e9) REAL time: 5 mins 36 secs 
+
+Phase 13.34  Placement Validation
+Phase 13.34  Placement Validation (Checksum:d88844e9) REAL time: 5 mins 37 secs 
+
+Total REAL time to Placer completion: 5 mins 38 secs 
+Total CPU  time to Placer completion: 5 mins 34 secs 
+Running post-placement packing...
+WARNING:PhysDesignRules:1843 - One or more MGTs are being used in this design. Evaluate the SelectIO-To-MGT Crosstalk
+   section of the Virtex-4 RocketIO Multi-Gigabit Transceiver User Guide to ensure that the design SelectIO usage meets
+   the guidelines to minimize the impact on MGT performance. 
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   DCM_AUTOCALIBRATION_clock_generator_0/clock_generator_0/DCM1_INST/Using_DCM_ADV.DCM_ADV_INST/clock_generator_0/clock_
+   generator_0/DCM1_INST/Using_DCM_ADV.DCM_ADV_INST/CLKOUT is sourced by a combinatorial pin. This is not good design
+   practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   DCM_AUTOCALIBRATION_clock_generator_0/clock_generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST/clock_generator_0/clock_
+   generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST/CLKOUT is sourced by a combinatorial pin. This is not good design
+   practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   DCM_AUTOCALIBRATION_clock_generator_0/clock_generator_0/DCM1_INST/Using_DCM_ADV.DCM_ADV_INST/clock_generator_0/clock_
+   generator_0/DCM1_INST/Using_DCM_ADV.DCM_ADV_INST/cd/CLK<1> is sourced by a combinatorial pin. This is not good design
+   practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   DCM_AUTOCALIBRATION_clock_generator_0/clock_generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST/clock_generator_0/clock_
+   generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST/cd/CLK<1> is sourced by a combinatorial pin. This is not good design
+   practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   DCM_AUTOCALIBRATION_clock_generator_0/clock_generator_0/DCM1_INST/Using_DCM_ADV.DCM_ADV_INST/clock_generator_0/clock_
+   generator_0/DCM1_INST/Using_DCM_ADV.DCM_ADV_INST/cd/CLK<2> is sourced by a combinatorial pin. This is not good design
+   practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   DCM_AUTOCALIBRATION_clock_generator_0/clock_generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST/clock_generator_0/clock_
+   generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST/cd/CLK<2> is sourced by a combinatorial pin. This is not good design
+   practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   DCM_AUTOCALIBRATION_clock_generator_0/clock_generator_0/DCM1_INST/Using_DCM_ADV.DCM_ADV_INST/clock_generator_0/clock_
+   generator_0/DCM1_INST/Using_DCM_ADV.DCM_ADV_INST/cd/CLK<3> is sourced by a combinatorial pin. This is not good design
+   practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   DCM_AUTOCALIBRATION_clock_generator_0/clock_generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST/clock_generator_0/clock_
+   generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST/cd/CLK<3> is sourced by a combinatorial pin. This is not good design
+   practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   DCM_AUTOCALIBRATION_clock_generator_0/clock_generator_0/DCM1_INST/Using_DCM_ADV.DCM_ADV_INST/clock_generator_0/clock_
+   generator_0/DCM1_INST/Using_DCM_ADV.DCM_ADV_INST/cd/CLK<4> is sourced by a combinatorial pin. This is not good design
+   practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   DCM_AUTOCALIBRATION_clock_generator_0/clock_generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST/clock_generator_0/clock_
+   generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST/cd/CLK<4> is sourced by a combinatorial pin. This is not good design
+   practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   DCM_AUTOCALIBRATION_clock_generator_0/clock_generator_0/DCM1_INST/Using_DCM_ADV.DCM_ADV_INST/clock_generator_0/clock_
+   generator_0/DCM1_INST/Using_DCM_ADV.DCM_ADV_INST/cd/CLK<5> is sourced by a combinatorial pin. This is not good design
+   practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   DCM_AUTOCALIBRATION_clock_generator_0/clock_generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST/clock_generator_0/clock_
+   generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST/cd/CLK<5> is sourced by a combinatorial pin. This is not good design
+   practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   DCM_AUTOCALIBRATION_clock_generator_0/clock_generator_0/DCM1_INST/Using_DCM_ADV.DCM_ADV_INST/clock_generator_0/clock_
+   generator_0/DCM1_INST/Using_DCM_ADV.DCM_ADV_INST/cd/CLK<6> is sourced by a combinatorial pin. This is not good design
+   practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   DCM_AUTOCALIBRATION_clock_generator_0/clock_generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST/clock_generator_0/clock_
+   generator_0/DCM0_INST/Using_DCM_ADV.DCM_ADV_INST/cd/CLK<6> is sourced by a combinatorial pin. This is not good design
+   practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:367 - The signal <xps_bram_if_cntlr_1_port_BRAM_Addr<30>> is incomplete. The signal does not
+   drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <xps_bram_if_cntlr_1_port_BRAM_Addr<31>> is incomplete. The signal does not
+   drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <TX1N_OUT<0>_x_x_x/TX1N_OUT<0>_x_x_x> is incomplete. The signal does not drive
+   any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <TX1N_OUT<0>_x_x/TX1N_OUT<0>_x_x> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <TX1N_OUT<0>_x/TX1N_OUT<0>_x> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal <TX1N_OUT<0>/TX1N_OUT<0>> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal <TX1N_OUT<1>_x_x_x/TX1N_OUT<1>_x_x_x> is incomplete. The signal does not drive
+   any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <TX1N_OUT<1>_x_x/TX1N_OUT<1>_x_x> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <TX1N_OUT<1>_x/TX1N_OUT<1>_x> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal <TX1N_OUT<1>/TX1N_OUT<1>> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal <TX1P_OUT<0>_x_x_x/TX1P_OUT<0>_x_x_x> is incomplete. The signal does not drive
+   any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <TX1P_OUT<0>_x_x/TX1P_OUT<0>_x_x> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <TX1P_OUT<0>_x/TX1P_OUT<0>_x> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal <TX1P_OUT<0>/TX1P_OUT<0>> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal <TX1P_OUT<1>_x_x_x/TX1P_OUT<1>_x_x_x> is incomplete. The signal does not drive
+   any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <TX1P_OUT<1>_x_x/TX1P_OUT<1>_x_x> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <TX1P_OUT<1>_x/TX1P_OUT<1>_x> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal <TX1P_OUT<1>/TX1P_OUT<1>> is incomplete. The signal does not drive any load
+   pins in the design.
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:   47
+Logic Utilization:
+  Number of Slice Flip Flops:         8,752 out of  17,088   51%
+    Number of Slice FFs used for
+    DCM autocalibration logic:         14 out of   8,752    1%
+  Number of 4 input LUTs:             9,969 out of  17,088   58%
+    Number of LUTs used for
+    DCM autocalibration logic:          8 out of   9,969    1%
+      *See INFO below for an explanation of the DCM autocalibration logic
+       added by Map
+Logic Distribution:
+  Number of occupied Slices:          7,942 out of   8,544   92%
+    Number of Slices containing only related logic:   7,942 out of   7,942 100%
+    Number of Slices containing unrelated logic:          0 out of   7,942   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:      10,339 out of  17,088   60%
+    Number used as logic:             9,530
+    Number used as a route-thru:        370
+    Number used as 16x1 RAMs:            29
+    Number used for Dual Port RAMs:     144
+      (Two LUTs used per Dual Port RAM)
+    Number used for 32x1 RAMs:            3
+      (Two LUTs used per 32x1 RAM)
+    Number used as Shift registers:     263
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  Number of bonded IPADs:                16 out of      24   66%
+  Number of bonded OPADs:                16 out of      16  100%
+  Number of bonded IOBs:                191 out of     320   59%
+    IOB Flip Flops:                     332
+    IOB Dual-Data Rate Flops:            75
+  Number of BUFG/BUFGCTRLs:              11 out of      32   34%
+    Number used as BUFGs:                10
+    Number used as BUFGCTRLs:             1
+  Number of FIFO16/RAMB16s:              49 out of      68   72%
+    Number used as RAMB16s:              49
+  Number of DCM_ADVs:                     2 out of       4   50%
+  Number of PPC405_ADVs:                  1 out of       1  100%
+  Number of EMACs:                        1 out of       1  100%
+  Number of JTAGPPCs:                     1 out of       1  100%
+  Number of IDELAYCTRLs:                  6 out of      12   50%
+  Number of GT11s:                        8 out of       8  100%
+
+Average Fanout of Non-Clock Nets:                3.28
+
+Peak Memory Usage:  937 MB
+Total REAL time to MAP completion:  5 mins 54 secs 
+Total CPU time to MAP completion:   5 mins 49 secs 
+
+INFO:
+
+   Logic has been added to automatically put the DCMs in auto-calibration
+   mode if the clock input or clock feedback ever stops. This is recommended
+   to ensure that the DCMs will maintain maximum operating frequency for the
+   following Virtex-4 devices: Production Step 2 for LX/SX, and all Productions
+   for FX.  The extra logic insertion can be disabled by placing the
+   DCM_AUTOCALIBRATION=FALSE attribute on each applicable DCM or by setting
+   the environment variable XIL_DCM_AUTOCALIBRATION_OFF.  For more information
+   regarding the DCM auto-calibration mode, please consult Answer Record 21435.
+
+
+Mapping completed.
+See MAP report file "system_map.mrp" for details.

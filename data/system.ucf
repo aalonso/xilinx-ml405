@@ -1,0 +1,289 @@
+#  Virtex 4 ML405 Evaluation Platform
+Net fpga_0_LEDs_4Bit_GPIO_IO_pin<0> LOC=A10  |  IOSTANDARD = LVCMOS25  |  PULLUP  |  SLEW = SLOW  |  DRIVE = 2  |  TIG;
+Net fpga_0_LEDs_4Bit_GPIO_IO_pin<1> LOC=B10  |  IOSTANDARD = LVCMOS25  |  PULLUP  |  SLEW = SLOW  |  DRIVE = 2  |  TIG;
+Net fpga_0_LEDs_4Bit_GPIO_IO_pin<2> LOC=F13  |  IOSTANDARD = LVCMOS25  |  PULLUP  |  SLEW = SLOW  |  DRIVE = 2  |  TIG;
+Net fpga_0_LEDs_4Bit_GPIO_IO_pin<3> LOC=F14  |  IOSTANDARD = LVCMOS25  |  PULLUP  |  SLEW = SLOW  |  DRIVE = 2  |  TIG;
+Net fpga_0_LEDs_Positions_GPIO_IO_pin<0> LOC=E6  |  IOSTANDARD = LVCMOS25  |  PULLUP  |  SLEW = SLOW  |  DRIVE = 2  |  TIG;
+Net fpga_0_LEDs_Positions_GPIO_IO_pin<1> LOC=G12  |  IOSTANDARD = LVCMOS25  |  PULLUP  |  SLEW = SLOW  |  DRIVE = 2  |  TIG;
+Net fpga_0_LEDs_Positions_GPIO_IO_pin<2> LOC=L9  |  IOSTANDARD = LVCMOS25  |  PULLUP  |  SLEW = SLOW  |  DRIVE = 2  |  TIG;
+Net fpga_0_LEDs_Positions_GPIO_IO_pin<3> LOC=L7  |  IOSTANDARD = LVCMOS25  |  PULLUP  |  SLEW = SLOW  |  DRIVE = 2  |  TIG;
+Net fpga_0_LEDs_Positions_GPIO_IO_pin<4> LOC=G4  |  IOSTANDARD = LVCMOS25  |  PULLUP  |  SLEW = SLOW  |  DRIVE = 2  |  TIG;
+Net fpga_0_Push_Buttons_Position_GPIO_IO_pin<0> LOC=D6  |  IOSTANDARD = LVCMOS25  |  PULLDOWN  |  SLEW = SLOW  |  DRIVE = 2  |  TIG;
+Net fpga_0_Push_Buttons_Position_GPIO_IO_pin<1> LOC=K8  |  IOSTANDARD = LVCMOS25  |  PULLDOWN  |  SLEW = SLOW  |  DRIVE = 2  |  TIG;
+Net fpga_0_Push_Buttons_Position_GPIO_IO_pin<2> LOC=L10  |  IOSTANDARD = LVCMOS25  |  PULLDOWN  |  SLEW = SLOW  |  DRIVE = 2  |  TIG;
+Net fpga_0_Push_Buttons_Position_GPIO_IO_pin<3> LOC=M6  |  IOSTANDARD = LVCMOS25  |  PULLDOWN  |  SLEW = SLOW  |  DRIVE = 2  |  TIG;
+Net fpga_0_Push_Buttons_Position_GPIO_IO_pin<4> LOC=G11  |  IOSTANDARD = LVCMOS25  |  PULLDOWN  |  SLEW = SLOW  |  DRIVE = 2  |  TIG;
+Net fpga_0_IIC_EEPROM_Sda_pin LOC=A14  |  SLEW = SLOW  |  DRIVE = 6;
+Net fpga_0_IIC_EEPROM_Scl_pin LOC=A13  |  SLEW = SLOW  |  DRIVE = 6;
+Net fpga_0_SysACE_CompactFlash_SysACE_MPA_pin<1> LOC=AC9  |  IOSTANDARD = LVCMOS33;
+Net fpga_0_SysACE_CompactFlash_SysACE_MPA_pin<2> LOC=AD8  |  IOSTANDARD = LVCMOS33;
+Net fpga_0_SysACE_CompactFlash_SysACE_MPA_pin<3> LOC=AD9  |  IOSTANDARD = LVCMOS33;
+Net fpga_0_SysACE_CompactFlash_SysACE_MPA_pin<4> LOC=AB6  |  IOSTANDARD = LVCMOS33;
+Net fpga_0_SysACE_CompactFlash_SysACE_MPA_pin<5> LOC=AA3  |  IOSTANDARD = LVCMOS33;
+Net fpga_0_SysACE_CompactFlash_SysACE_MPA_pin<6> LOC=Y3  |  IOSTANDARD = LVCMOS33;
+Net fpga_0_SysACE_CompactFlash_SysACE_CLK_pin LOC=AE13  |  IOSTANDARD = LVCMOS33  |  PERIOD = 30000 ps;
+Net fpga_0_SysACE_CompactFlash_SysACE_MPIRQ_pin LOC=W4  |  IOSTANDARD = LVCMOS33  |  TIG;
+Net fpga_0_SysACE_CompactFlash_SysACE_CEN_pin LOC=AA4  |  IOSTANDARD = LVCMOS33;
+Net fpga_0_SysACE_CompactFlash_SysACE_OEN_pin LOC=AC8  |  IOSTANDARD = LVCMOS33;
+Net fpga_0_SysACE_CompactFlash_SysACE_WEN_pin LOC=AD10  |  IOSTANDARD = LVCMOS33;
+Net fpga_0_SysACE_CompactFlash_SysACE_MPD_pin<0> LOC=AD11  |  IOSTANDARD = LVCMOS33;
+Net fpga_0_SysACE_CompactFlash_SysACE_MPD_pin<1> LOC=AB10  |  IOSTANDARD = LVCMOS33;
+Net fpga_0_SysACE_CompactFlash_SysACE_MPD_pin<2> LOC=AB11  |  IOSTANDARD = LVCMOS33;
+Net fpga_0_SysACE_CompactFlash_SysACE_MPD_pin<3> LOC=AC11  |  IOSTANDARD = LVCMOS33;
+Net fpga_0_SysACE_CompactFlash_SysACE_MPD_pin<4> LOC=Y8  |  IOSTANDARD = LVCMOS33;
+Net fpga_0_SysACE_CompactFlash_SysACE_MPD_pin<5> LOC=AA10  |  IOSTANDARD = LVCMOS33;
+Net fpga_0_SysACE_CompactFlash_SysACE_MPD_pin<6> LOC=Y7  |  IOSTANDARD = LVCMOS33;
+Net fpga_0_SysACE_CompactFlash_SysACE_MPD_pin<7> LOC=AA7  |  IOSTANDARD = LVCMOS33;
+Net fpga_0_SysACE_CompactFlash_SysACE_MPD_pin<8> LOC=Y6  |  IOSTANDARD = LVCMOS33;
+Net fpga_0_SysACE_CompactFlash_SysACE_MPD_pin<9> LOC=AD6  |  IOSTANDARD = LVCMOS33;
+Net fpga_0_SysACE_CompactFlash_SysACE_MPD_pin<10> LOC=AD5  |  IOSTANDARD = LVCMOS33;
+Net fpga_0_SysACE_CompactFlash_SysACE_MPD_pin<11> LOC=AD4  |  IOSTANDARD = LVCMOS33;
+Net fpga_0_SysACE_CompactFlash_SysACE_MPD_pin<12> LOC=AA8  |  IOSTANDARD = LVCMOS33;
+Net fpga_0_SysACE_CompactFlash_SysACE_MPD_pin<13> LOC=AB7  |  IOSTANDARD = LVCMOS33;
+Net fpga_0_SysACE_CompactFlash_SysACE_MPD_pin<14> LOC=AD3  |  IOSTANDARD = LVCMOS33;
+Net fpga_0_SysACE_CompactFlash_SysACE_MPD_pin<15> LOC=AB4  |  IOSTANDARD = LVCMOS33;
+Net fpga_0_DDR_SDRAM_DDR_Clk_pin LOC=C13  |  IOSTANDARD = DIFF_SSTL2_II;
+Net fpga_0_DDR_SDRAM_DDR_Clk_n_pin LOC=C12  |  IOSTANDARD = DIFF_SSTL2_II;
+Net fpga_0_DDR_SDRAM_DDR_CE_pin LOC=J24  |  IOSTANDARD = SSTL2_I;
+Net fpga_0_DDR_SDRAM_DDR_CS_n_pin LOC=H23  |  IOSTANDARD = SSTL2_I;
+Net fpga_0_DDR_SDRAM_DDR_RAS_n_pin LOC=A17  |  IOSTANDARD = SSTL2_I;
+Net fpga_0_DDR_SDRAM_DDR_CAS_n_pin LOC=B17  |  IOSTANDARD = SSTL2_I;
+Net fpga_0_DDR_SDRAM_DDR_WE_n_pin LOC=D20  |  IOSTANDARD = SSTL2_I;
+Net fpga_0_DDR_SDRAM_DDR_BankAddr_pin<0> LOC=E13  |  IOSTANDARD = SSTL2_I;
+Net fpga_0_DDR_SDRAM_DDR_BankAddr_pin<1> LOC=C14  |  IOSTANDARD = SSTL2_I;
+Net fpga_0_DDR_SDRAM_DDR_Addr_pin<0> LOC=C18  |  IOSTANDARD = SSTL2_I;
+Net fpga_0_DDR_SDRAM_DDR_Addr_pin<1> LOC=C17  |  IOSTANDARD = SSTL2_I;
+Net fpga_0_DDR_SDRAM_DDR_Addr_pin<2> LOC=E17  |  IOSTANDARD = SSTL2_I;
+Net fpga_0_DDR_SDRAM_DDR_Addr_pin<3> LOC=D16  |  IOSTANDARD = SSTL2_I;
+Net fpga_0_DDR_SDRAM_DDR_Addr_pin<4> LOC=C16  |  IOSTANDARD = SSTL2_I;
+Net fpga_0_DDR_SDRAM_DDR_Addr_pin<5> LOC=B15  |  IOSTANDARD = SSTL2_I;
+Net fpga_0_DDR_SDRAM_DDR_Addr_pin<6> LOC=B16  |  IOSTANDARD = SSTL2_I;
+Net fpga_0_DDR_SDRAM_DDR_Addr_pin<7> LOC=A15  |  IOSTANDARD = SSTL2_I;
+Net fpga_0_DDR_SDRAM_DDR_Addr_pin<8> LOC=F17  |  IOSTANDARD = SSTL2_I;
+Net fpga_0_DDR_SDRAM_DDR_Addr_pin<9> LOC=C21  |  IOSTANDARD = SSTL2_I;
+Net fpga_0_DDR_SDRAM_DDR_Addr_pin<10> LOC=D18  |  IOSTANDARD = SSTL2_I;
+Net fpga_0_DDR_SDRAM_DDR_Addr_pin<11> LOC=D21  |  IOSTANDARD = SSTL2_I;
+Net fpga_0_DDR_SDRAM_DDR_Addr_pin<12> LOC=E20  |  IOSTANDARD = SSTL2_I;
+Net fpga_0_DDR_SDRAM_DDR_DQ_pin<0> LOC=F23  |  IOSTANDARD = SSTL2_II;
+Net fpga_0_DDR_SDRAM_DDR_DQ_pin<1> LOC=E21  |  IOSTANDARD = SSTL2_II;
+Net fpga_0_DDR_SDRAM_DDR_DQ_pin<2> LOC=F20  |  IOSTANDARD = SSTL2_II;
+Net fpga_0_DDR_SDRAM_DDR_DQ_pin<3> LOC=G20  |  IOSTANDARD = SSTL2_II;
+Net fpga_0_DDR_SDRAM_DDR_DQ_pin<4> LOC=F19  |  IOSTANDARD = SSTL2_II;
+Net fpga_0_DDR_SDRAM_DDR_DQ_pin<5> LOC=G19  |  IOSTANDARD = SSTL2_II;
+Net fpga_0_DDR_SDRAM_DDR_DQ_pin<6> LOC=H19  |  IOSTANDARD = SSTL2_II;
+Net fpga_0_DDR_SDRAM_DDR_DQ_pin<7> LOC=C19  |  IOSTANDARD = SSTL2_II;
+Net fpga_0_DDR_SDRAM_DDR_DQ_pin<8> LOC=E23  |  IOSTANDARD = SSTL2_II;
+Net fpga_0_DDR_SDRAM_DDR_DQ_pin<9> LOC=G24  |  IOSTANDARD = SSTL2_II;
+Net fpga_0_DDR_SDRAM_DDR_DQ_pin<10> LOC=F24  |  IOSTANDARD = SSTL2_II;
+Net fpga_0_DDR_SDRAM_DDR_DQ_pin<11> LOC=H22  |  IOSTANDARD = SSTL2_II;
+Net fpga_0_DDR_SDRAM_DDR_DQ_pin<12> LOC=M24  |  IOSTANDARD = SSTL2_II;
+Net fpga_0_DDR_SDRAM_DDR_DQ_pin<13> LOC=K23  |  IOSTANDARD = SSTL2_II;
+Net fpga_0_DDR_SDRAM_DDR_DQ_pin<14> LOC=N24  |  IOSTANDARD = SSTL2_II;
+Net fpga_0_DDR_SDRAM_DDR_DQ_pin<15> LOC=L24  |  IOSTANDARD = SSTL2_II;
+Net fpga_0_DDR_SDRAM_DDR_DQ_pin<16> LOC=F18  |  IOSTANDARD = SSTL2_II;
+Net fpga_0_DDR_SDRAM_DDR_DQ_pin<17> LOC=N23  |  IOSTANDARD = SSTL2_II;
+Net fpga_0_DDR_SDRAM_DDR_DQ_pin<18> LOC=J23  |  IOSTANDARD = SSTL2_II;
+Net fpga_0_DDR_SDRAM_DDR_DQ_pin<19> LOC=N22  |  IOSTANDARD = SSTL2_II;
+Net fpga_0_DDR_SDRAM_DDR_DQ_pin<20> LOC=H24  |  IOSTANDARD = SSTL2_II;
+Net fpga_0_DDR_SDRAM_DDR_DQ_pin<21> LOC=L19  |  IOSTANDARD = SSTL2_II;
+Net fpga_0_DDR_SDRAM_DDR_DQ_pin<22> LOC=G22  |  IOSTANDARD = SSTL2_II;
+Net fpga_0_DDR_SDRAM_DDR_DQ_pin<23> LOC=F22  |  IOSTANDARD = SSTL2_II;
+Net fpga_0_DDR_SDRAM_DDR_DQ_pin<24> LOC=J19  |  IOSTANDARD = SSTL2_II;
+Net fpga_0_DDR_SDRAM_DDR_DQ_pin<25> LOC=L18  |  IOSTANDARD = SSTL2_II;
+Net fpga_0_DDR_SDRAM_DDR_DQ_pin<26> LOC=M22  |  IOSTANDARD = SSTL2_II;
+Net fpga_0_DDR_SDRAM_DDR_DQ_pin<27> LOC=D19  |  IOSTANDARD = SSTL2_II;
+Net fpga_0_DDR_SDRAM_DDR_DQ_pin<28> LOC=K18  |  IOSTANDARD = SSTL2_II;
+Net fpga_0_DDR_SDRAM_DDR_DQ_pin<29> LOC=G21  |  IOSTANDARD = SSTL2_II;
+Net fpga_0_DDR_SDRAM_DDR_DQ_pin<30> LOC=J21  |  IOSTANDARD = SSTL2_II;
+Net fpga_0_DDR_SDRAM_DDR_DQ_pin<31> LOC=K21  |  IOSTANDARD = SSTL2_II;
+Net fpga_0_DDR_SDRAM_DDR_DM_pin<0> LOC=K20  |  IOSTANDARD = SSTL2_I;
+Net fpga_0_DDR_SDRAM_DDR_DM_pin<1> LOC=C23  |  IOSTANDARD = SSTL2_I;
+Net fpga_0_DDR_SDRAM_DDR_DM_pin<2> LOC=D23  |  IOSTANDARD = SSTL2_I;
+Net fpga_0_DDR_SDRAM_DDR_DM_pin<3> LOC=E22  |  IOSTANDARD = SSTL2_I;
+Net fpga_0_DDR_SDRAM_DDR_DQS_pin<0> LOC=L23  |  IOSTANDARD = SSTL2_II;
+Net fpga_0_DDR_SDRAM_DDR_DQS_pin<1> LOC=D24  |  IOSTANDARD = SSTL2_II;
+Net fpga_0_DDR_SDRAM_DDR_DQS_pin<2> LOC=C24  |  IOSTANDARD = SSTL2_II;
+Net fpga_0_DDR_SDRAM_DDR_DQS_pin<3> LOC=K22  |  IOSTANDARD = SSTL2_II;
+Net fpga_0_TriMode_MAC_GMII_TemacPhy_RST_n_pin LOC = E7  |  TIG;
+Net fpga_0_TriMode_MAC_GMII_MII_TX_CLK_0_pin LOC = D15;
+Net fpga_0_TriMode_MAC_GMII_GMII_TXD_0_pin<7> LOC = F8;
+Net fpga_0_TriMode_MAC_GMII_GMII_TXD_0_pin<6> LOC = D9;
+Net fpga_0_TriMode_MAC_GMII_GMII_TXD_0_pin<5> LOC = D10;
+Net fpga_0_TriMode_MAC_GMII_GMII_TXD_0_pin<4> LOC = C8;
+Net fpga_0_TriMode_MAC_GMII_GMII_TXD_0_pin<3> LOC = C9;
+Net fpga_0_TriMode_MAC_GMII_GMII_TXD_0_pin<2> LOC = B9;
+Net fpga_0_TriMode_MAC_GMII_GMII_TXD_0_pin<1> LOC = F10;
+Net fpga_0_TriMode_MAC_GMII_GMII_TXD_0_pin<0> LOC = A9;
+Net fpga_0_TriMode_MAC_GMII_GMII_TX_EN_0_pin LOC = E10;
+Net fpga_0_TriMode_MAC_GMII_GMII_TX_ER_0_pin LOC = B11;
+Net fpga_0_TriMode_MAC_GMII_GMII_TX_CLK_0_pin LOC = J9;
+Net fpga_0_TriMode_MAC_GMII_GMII_RXD_0_pin<7> LOC = C4;
+Net fpga_0_TriMode_MAC_GMII_GMII_RXD_0_pin<6> LOC = F7;
+Net fpga_0_TriMode_MAC_GMII_GMII_RXD_0_pin<5> LOC = C6;
+Net fpga_0_TriMode_MAC_GMII_GMII_RXD_0_pin<4> LOC = D5;
+Net fpga_0_TriMode_MAC_GMII_GMII_RXD_0_pin<3> LOC = B6;
+Net fpga_0_TriMode_MAC_GMII_GMII_RXD_0_pin<2> LOC = B7;
+Net fpga_0_TriMode_MAC_GMII_GMII_RXD_0_pin<1> LOC = C7;
+Net fpga_0_TriMode_MAC_GMII_GMII_RXD_0_pin<0> LOC = A8;
+Net fpga_0_TriMode_MAC_GMII_GMII_RX_DV_0_pin LOC = A7;
+Net fpga_0_TriMode_MAC_GMII_GMII_RX_ER_0_pin LOC = C11;
+Net fpga_0_TriMode_MAC_GMII_GMII_RX_CLK_0_pin LOC = F15;
+Net fpga_0_TriMode_MAC_GMII_MDC_0_pin LOC = D11;
+Net fpga_0_TriMode_MAC_GMII_MDIO_0_pin LOC = E8;
+Net fpga_0_FLASH_Mem_A_pin<29> LOC=N3  |  IOSTANDARD = LVDCI_33  |  SLEW = FAST  |  DRIVE = 8;
+Net fpga_0_FLASH_Mem_A_pin<28> LOC=N4  |  IOSTANDARD = LVDCI_33  |  SLEW = FAST  |  DRIVE = 8;
+Net fpga_0_FLASH_Mem_A_pin<27> LOC=P3  |  IOSTANDARD = LVDCI_33  |  SLEW = FAST  |  DRIVE = 8;
+Net fpga_0_FLASH_Mem_A_pin<26> LOC=R5  |  IOSTANDARD = LVDCI_33  |  SLEW = FAST  |  DRIVE = 8;
+Net fpga_0_FLASH_Mem_A_pin<25> LOC=T3  |  IOSTANDARD = LVDCI_33  |  SLEW = FAST  |  DRIVE = 8;
+Net fpga_0_FLASH_Mem_A_pin<24> LOC=U4  |  IOSTANDARD = LVDCI_33  |  SLEW = FAST  |  DRIVE = 8;
+Net fpga_0_FLASH_Mem_A_pin<23> LOC=V3  |  IOSTANDARD = LVDCI_33  |  SLEW = FAST  |  DRIVE = 8;
+Net fpga_0_FLASH_Mem_A_pin<22> LOC=V4  |  IOSTANDARD = LVDCI_33  |  SLEW = FAST  |  DRIVE = 8;
+Net fpga_0_FLASH_Mem_A_pin<21> LOC=W3  |  IOSTANDARD = LVDCI_33  |  SLEW = FAST  |  DRIVE = 8;
+Net fpga_0_FLASH_Mem_A_pin<20> LOC=U6  |  IOSTANDARD = LVDCI_33  |  SLEW = FAST  |  DRIVE = 8;
+Net fpga_0_FLASH_Mem_A_pin<19> LOC=W5  |  IOSTANDARD = LVDCI_33  |  SLEW = FAST  |  DRIVE = 8;
+Net fpga_0_FLASH_Mem_A_pin<18> LOC=Y5  |  IOSTANDARD = LVDCI_33  |  SLEW = FAST  |  DRIVE = 8;
+Net fpga_0_FLASH_Mem_A_pin<17> LOC=AA5  |  IOSTANDARD = LVDCI_33  |  SLEW = FAST  |  DRIVE = 8;
+Net fpga_0_FLASH_Mem_A_pin<16> LOC=AB5  |  IOSTANDARD = LVDCI_33  |  SLEW = FAST  |  DRIVE = 8;
+Net fpga_0_FLASH_Mem_A_pin<15> LOC=V6  |  IOSTANDARD = LVDCI_33  |  SLEW = FAST  |  DRIVE = 8;
+Net fpga_0_FLASH_Mem_A_pin<14> LOC=U7  |  IOSTANDARD = LVDCI_33  |  SLEW = FAST  |  DRIVE = 8;
+Net fpga_0_FLASH_Mem_A_pin<13> LOC=V8  |  IOSTANDARD = LVDCI_33  |  SLEW = FAST  |  DRIVE = 8;
+Net fpga_0_FLASH_Mem_A_pin<12> LOC=AA9  |  IOSTANDARD = LVDCI_33  |  SLEW = FAST  |  DRIVE = 8;
+Net fpga_0_FLASH_Mem_A_pin<11> LOC=AB9  |  IOSTANDARD = LVDCI_33  |  SLEW = FAST  |  DRIVE = 8;
+Net fpga_0_FLASH_Mem_A_pin<10> LOC=U9  |  IOSTANDARD = LVDCI_33  |  SLEW = FAST  |  DRIVE = 8;
+Net fpga_0_FLASH_Mem_A_pin<9> LOC=T9  |  IOSTANDARD = LVDCI_33  |  SLEW = FAST  |  DRIVE = 8;
+Net fpga_0_FLASH_Mem_OEN_pin LOC=AC4  |  IOSTANDARD = LVDCI_33  |  SLEW = FAST  |  DRIVE = 8;
+Net fpga_0_FLASH_Mem_WEN_pin LOC=AC3  |  IOSTANDARD = LVDCI_33  |  SLEW = FAST  |  DRIVE = 8;
+Net fpga_0_FLASH_Mem_CE_pin LOC=P5  |  IOSTANDARD = LVDCI_33  |  SLEW = FAST  |  DRIVE = 8;
+Net fpga_0_FLASH_Mem_DQ_pin<31> LOC=V12  |  SLEW = FAST  |  IOSTANDARD = LVCMOS33  |  DRIVE = 12  |  PULLDOWN;
+Net fpga_0_FLASH_Mem_DQ_pin<30> LOC=V13  |  SLEW = FAST  |  IOSTANDARD = LVCMOS33  |  DRIVE = 12  |  PULLDOWN;
+Net fpga_0_FLASH_Mem_DQ_pin<29> LOC=V14  |  SLEW = FAST  |  IOSTANDARD = LVCMOS33  |  DRIVE = 12  |  PULLDOWN;
+Net fpga_0_FLASH_Mem_DQ_pin<28> LOC=U14  |  SLEW = FAST  |  IOSTANDARD = LVCMOS33  |  DRIVE = 12  |  PULLDOWN;
+Net fpga_0_FLASH_Mem_DQ_pin<27> LOC=W13  |  SLEW = FAST  |  IOSTANDARD = LVCMOS33  |  DRIVE = 12  |  PULLDOWN;
+Net fpga_0_FLASH_Mem_DQ_pin<26> LOC=Y13  |  SLEW = FAST  |  IOSTANDARD = LVCMOS33  |  DRIVE = 12  |  PULLDOWN;
+Net fpga_0_FLASH_Mem_DQ_pin<25> LOC=W14  |  SLEW = FAST  |  IOSTANDARD = LVCMOS33  |  DRIVE = 12  |  PULLDOWN;
+Net fpga_0_FLASH_Mem_DQ_pin<24> LOC=W15  |  SLEW = FAST  |  IOSTANDARD = LVCMOS33  |  DRIVE = 12  |  PULLDOWN;
+Net fpga_0_FLASH_Mem_DQ_pin<23> LOC=V11  |  SLEW = FAST  |  IOSTANDARD = LVCMOS33  |  DRIVE = 12  |  PULLDOWN;
+Net fpga_0_FLASH_Mem_DQ_pin<22> LOC=W11  |  SLEW = FAST  |  IOSTANDARD = LVCMOS33  |  DRIVE = 12  |  PULLDOWN;
+Net fpga_0_FLASH_Mem_DQ_pin<21> LOC=U15  |  SLEW = FAST  |  IOSTANDARD = LVCMOS33  |  DRIVE = 12  |  PULLDOWN;
+Net fpga_0_FLASH_Mem_DQ_pin<20> LOC=U16  |  SLEW = FAST  |  IOSTANDARD = LVCMOS33  |  DRIVE = 12  |  PULLDOWN;
+Net fpga_0_FLASH_Mem_DQ_pin<19> LOC=Y11  |  SLEW = FAST  |  IOSTANDARD = LVCMOS33  |  DRIVE = 12  |  PULLDOWN;
+Net fpga_0_FLASH_Mem_DQ_pin<18> LOC=Y12  |  SLEW = FAST  |  IOSTANDARD = LVCMOS33  |  DRIVE = 12  |  PULLDOWN;
+Net fpga_0_FLASH_Mem_DQ_pin<17> LOC=W16  |  SLEW = FAST  |  IOSTANDARD = LVCMOS33  |  DRIVE = 12  |  PULLDOWN;
+Net fpga_0_FLASH_Mem_DQ_pin<16> LOC=V16  |  SLEW = FAST  |  IOSTANDARD = LVCMOS33  |  DRIVE = 12  |  PULLDOWN;
+Net fpga_0_FLASH_Mem_DQ_pin<15> LOC=J11  |  SLEW = FAST  |  IOSTANDARD = LVCMOS33  |  DRIVE = 12  |  PULLDOWN;
+Net fpga_0_FLASH_Mem_DQ_pin<14> LOC=H11  |  SLEW = FAST  |  IOSTANDARD = LVCMOS33  |  DRIVE = 12  |  PULLDOWN;
+Net fpga_0_FLASH_Mem_DQ_pin<13> LOC=G15  |  SLEW = FAST  |  IOSTANDARD = LVCMOS33  |  DRIVE = 12  |  PULLDOWN;
+Net fpga_0_FLASH_Mem_DQ_pin<12> LOC=G16  |  SLEW = FAST  |  IOSTANDARD = LVCMOS33  |  DRIVE = 12  |  PULLDOWN;
+Net fpga_0_FLASH_Mem_DQ_pin<11> LOC=K11  |  SLEW = FAST  |  IOSTANDARD = LVCMOS33  |  DRIVE = 12  |  PULLDOWN;
+Net fpga_0_FLASH_Mem_DQ_pin<10> LOC=K12  |  SLEW = FAST  |  IOSTANDARD = LVCMOS33  |  DRIVE = 12  |  PULLDOWN;
+Net fpga_0_FLASH_Mem_DQ_pin<9> LOC=H16  |  SLEW = FAST  |  IOSTANDARD = LVCMOS33  |  DRIVE = 12  |  PULLDOWN;
+Net fpga_0_FLASH_Mem_DQ_pin<8> LOC=J16  |  SLEW = FAST  |  IOSTANDARD = LVCMOS33  |  DRIVE = 12  |  PULLDOWN;
+Net fpga_0_FLASH_Mem_DQ_pin<7> LOC=H12  |  SLEW = FAST  |  IOSTANDARD = LVCMOS33  |  DRIVE = 12  |  PULLDOWN;
+Net fpga_0_FLASH_Mem_DQ_pin<6> LOC=H13  |  SLEW = FAST  |  IOSTANDARD = LVCMOS33  |  DRIVE = 12  |  PULLDOWN;
+Net fpga_0_FLASH_Mem_DQ_pin<5> LOC=G14  |  SLEW = FAST  |  IOSTANDARD = LVCMOS33  |  DRIVE = 12  |  PULLDOWN;
+Net fpga_0_FLASH_Mem_DQ_pin<4> LOC=H14  |  SLEW = FAST  |  IOSTANDARD = LVCMOS33  |  DRIVE = 12  |  PULLDOWN;
+Net fpga_0_FLASH_Mem_DQ_pin<3> LOC=J13  |  SLEW = FAST  |  IOSTANDARD = LVCMOS33  |  DRIVE = 12  |  PULLDOWN;
+Net fpga_0_FLASH_Mem_DQ_pin<2> LOC=K13  |  SLEW = FAST  |  IOSTANDARD = LVCMOS33  |  DRIVE = 12  |  PULLDOWN;
+Net fpga_0_FLASH_Mem_DQ_pin<1> LOC=J14  |  SLEW = FAST  |  IOSTANDARD = LVCMOS33  |  DRIVE = 12  |  PULLDOWN;
+Net fpga_0_FLASH_Mem_DQ_pin<0> LOC=J15  |  SLEW = FAST  |  IOSTANDARD = LVCMOS33  |  DRIVE = 12  |  PULLDOWN;
+Net fpga_0_RS232_Uart_sin_pin LOC=T4  |  IOSTANDARD = LVCMOS33;
+Net fpga_0_RS232_Uart_sout_pin LOC=T8  |  IOSTANDARD = LVCMOS33;
+Net fpga_0_clk_1_sys_clk_pin TNM_NET = sys_clk_pin;
+TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 100000 kHz;
+Net fpga_0_clk_1_sys_clk_pin LOC=AB14  |  IOSTANDARD = LVCMOS33;
+Net fpga_0_rst_1_sys_rst_pin TIG;
+Net fpga_0_rst_1_sys_rst_pin LOC=M5  |  PULLUP;
+
+###### TriMode_MAC_GMII
+net "*TriMode_MAC_GMII*/REFCLK"          TNM_NET = "REFCLK"; #name of signal connected to TEMAC REFCLK input
+TIMEGRP  "delayctrl_clk_200"       = "REFCLK";
+TIMESPEC "TS_delayctrl_clk_200"    = PERIOD "delayctrl_clk_200" 5000 ps HIGH 50 %; #constant value based on constant 200 MHZ ref clock
+
+net "*TriMode_MAC_GMII*/GTX_CLK_0"          TNM_NET = "clk_125"; #name of signal connected to TEMAC GTX_CLK_0 input
+TIMEGRP  "ethernet_gtx_clk_125"    = "clk_125";
+TIMESPEC "TS_ethernet_gtx_clk_125" = PERIOD "ethernet_gtx_clk_125" 8000 ps HIGH 50 %; #constant value based on constant 125 MHZ GTX clock
+
+NET "*TriMode_MAC_GMII*/LlinkTemac0_CLK"           TNM_NET = "LLCLK0"; #name of signal connected to TEMAC LlinkTemac0_CLK input
+NET "*TriMode_MAC_GMII*/SPLB_Clk"                  TNM_NET = "PLBCLK"; #name of signal connected to TEMAC SPLB_Clk input
+
+# EMAC0 TX Client Clock
+NET "*/tx_client_clk_in_0*"        TNM_NET = "clk_client_tx0";
+NET "*/tx_client_clk_out_0*"       TNM_NET = "clk_client_tx0";
+TIMEGRP  "gmii_client_clk_tx0"     = "clk_client_tx0";
+TIMESPEC "TS_gmii_client_clk_tx0"  = PERIOD "gmii_client_clk_tx0" 7500 ps HIGH 50 %;
+
+# EMAC0 RX Client Clock
+NET "*/rx_client_clk_in_0*"        TNM_NET = "clk_client_rx0";
+NET "*/rx_client_clk_out_0*"       TNM_NET = "clk_client_rx0";
+TIMEGRP  "gmii_client_clk_rx0"     = "clk_client_rx0";
+TIMESPEC "TS_gmii_client_clk_rx0"  = PERIOD "gmii_client_clk_rx0" 7500 ps HIGH 50 %;
+
+# EMAC0 TX PHY Clock
+NET "*/tx_gmii_mii_clk_in_0*"      TNM_NET = "clk_phy_tx0";
+NET "*/tx_gmii_mii_clk_out_0*"     TNM_NET = "clk_phy_tx0";
+TIMESPEC "TS_gmii_phy_clk_tx0"     = PERIOD "gmii_phy_clk_tx0" 7500 ps HIGH 50 %;
+
+# EMAC0 RX PHY Clock
+NET "*/gmii_rx_clk_0*"             TNM_NET = "phy_clk_rx0";
+TIMESPEC "TS_gmii_clk_phy_rx0"     = PERIOD "gmii_clk_phy_rx0" 7500 ps HIGH 50 %;
+
+# EMAC0 TX MII 10/100 PHY Clock
+NET "*mii_tx_clk_0*"               TNM_NET = "clk_mii_tx_clk0";
+TIMESPEC "TS_mii_tx_clk0"          = PERIOD "clk_mii_tx_clk0" 40000 ps HIGH 50 %;
+
+# Set the IDELAY values on the data inputs.
+# Please modify to suit your design.
+INST "*gmii_rxd?_delay"     IOBDELAY_TYPE = FIXED;
+INST "*gmii_rx_dv_delay"    IOBDELAY_TYPE = FIXED;
+INST "*gmii_rx_er_delay"    IOBDELAY_TYPE = FIXED;
+INST "*gmii_rx_clk_?_delay" IOBDELAY_TYPE = FIXED;
+
+INST "*gmii_rx_dv_delay"    IOBDELAY_VALUE = 57;
+INST "*gmii_rxd?_delay"     IOBDELAY_VALUE = 57;
+INST "*gmii_rx_er_delay"    IOBDELAY_VALUE = 57;
+
+INST "*gmii_rx_clk_0_delay" IOBDELAY_VALUE = 0;
+
+# GMII Receiver Constraints:  place flip-flops in IOB
+INST "*gmii0*RXD_TO_MAC*"    IOB = TRUE;
+INST "*gmii0*RX_DV_TO_MAC"   IOB = TRUE;
+INST "*gmii0*RX_ER_TO_MAC"   IOB = TRUE;
+
+# PHY spec: 2.5ns setup time, 0.5ns hold time
+# Assumes equal length board traces
+
+NET "*/GMII_RXD_0*"     TNM = "gmii_rx_0";
+NET "*/GMII_RX_DV_0*"   TNM = "gmii_rx_0";
+NET "*/GMII_RX_ER_0*"   TNM = "gmii_rx_0";
+
+TIMEGRP "gmii_rx_0" OFFSET = IN 2.5 ns VALID 3 ns BEFORE "*/GMII_RX_CLK_0*";
+
+# GMII Transmiter Constraints:  place flip-flops in IOB
+INST "*gmii0*gmii_txd_r*"    IOB = TRUE;
+INST "*gmii0*gmii_tx_er_r"   IOB = TRUE;
+INST "*gmii0*gmii_tx_en_r"   IOB = TRUE;
+               
+TIMESPEC TS_PLB_2_TXPHY0 = FROM PLBCLK      TO clk_phy_tx0  8000 ps DATAPATHONLY; #constant value based on Ethernet clock
+TIMESPEC TS_RXPHY0_2_PLB = FROM phy_clk_rx0 TO PLBCLK      10000 ps DATAPATHONLY; #varies based on period of PLB clock
+
+TIMESPEC "TS_LL_CLK0_2_RX_CLIENT_CLK0"  = FROM LLCLK0 TO clk_client_rx0  8000 ps DATAPATHONLY; #constant value based on Ethernet clock
+TIMESPEC "TS_LL_CLK0_2_TX_CLIENT_CLK0"  = FROM LLCLK0 TO clk_client_tx0  8000 ps DATAPATHONLY; #constant value based on Ethernet clock
+TIMESPEC "TS_RX_CLIENT_CLK0_2_LL_CLK0"  = FROM clk_client_rx0 TO LLCLK0 10000 ps DATAPATHONLY; #varies based on period of LocalLink clock
+TIMESPEC "TS_TX_CLIENT_CLK0_2_LL_CLK0"  = FROM clk_client_tx0 TO LLCLK0 10000 ps DATAPATHONLY; #varies based on period of LocalLink clock
+
+TIMESPEC "TS_REF_CLK_2_PLB_CLIENT_CLK"  = FROM REFCLK TO PLBCLK 10000 ps DATAPATHONLY; #varies based on period of PLB clock
+TIMESPEC "TS_PLB_CLIENT_CLK_2_REF_CLK"  = FROM PLBCLK TO REFCLK  5000 ps DATAPATHONLY; #constant value based on constant 200 MHZ ref clock
+
+TIMESPEC "TS_REF_CLK_2_TX_CLIENT_CLK0"  = FROM REFCLK TO clk_client_tx0 8000 ps DATAPATHONLY; #constant value based on Ethernet clock
+TIMESPEC "TS_TX_CLIENT_CLK0_2_REF_CLK"  = FROM clk_client_tx0 TO REFCLK 5000 ps DATAPATHONLY; #constant value based on constant 200 MHZ ref clock
+
+TIMESPEC "TS_REF_CLK_2_RX_CLIENT_CLK0"  = FROM REFCLK TO clk_client_rx0 8000 ps DATAPATHONLY; #constant value based on Ethernet clock
+TIMESPEC "TS_RX_CLIENT_CLK0_2_REF_CLK"  = FROM clk_client_rx0 TO REFCLK 5000 ps DATAPATHONLY; #constant value based on constant 200 MHZ ref clock
+
+
+
+###### ppc405_0
+NET "ppc405_0/C405RSTCHIPRESETREQ" TPTHRU = "ppc405_0_RST_GRP";
+NET "ppc405_0/C405RSTCORERESETREQ" TPTHRU = "ppc405_0_RST_GRP";
+NET "ppc405_0/C405RSTSYSRESETREQ" TPTHRU = "ppc405_0_RST_GRP";
+TIMESPEC "TS_RST_ppc405_0" = FROM CPUS THRU ppc405_0_RST_GRP TO FFS TIG;

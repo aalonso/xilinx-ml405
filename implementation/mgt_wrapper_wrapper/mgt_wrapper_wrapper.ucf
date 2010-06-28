@@ -1,0 +1,8 @@
+INST "mgt_wrapper*g1[0].g2.pcore/*/GT11_INST_A/GT11_10GE_4_INST" LOC="GT11_X0Y3";
+INST "mgt_wrapper*g1[0].g2.pcore/*/GT11_INST_B/GT11_10GE_4_INST" LOC="GT11_X0Y2";
+INST "mgt_wrapper*g1[1].g2.pcore/*/GT11_INST_A/GT11_10GE_4_INST" LOC="GT11_X0Y1";
+INST "mgt_wrapper*g1[1].g2.pcore/*/GT11_INST_B/GT11_10GE_4_INST" LOC="GT11_X0Y0";
+INST "mgt_wrapper*g1[2].g2.pcore/*/GT11_INST_A/GT11_10GE_4_INST" LOC="GT11_X1Y3";
+INST "mgt_wrapper*g1[2].g2.pcore/*/GT11_INST_B/GT11_10GE_4_INST" LOC="GT11_X1Y2";
+INST "mgt_wrapper*g1[3].g2.pcore/*/GT11_INST_A/GT11_10GE_4_INST" LOC="GT11_X1Y1";
+INST "mgt_wrapper*g1[3].g2.pcore/*/GT11_INST_B/GT11_10GE_4_INST" LOC="GT11_X1Y0";

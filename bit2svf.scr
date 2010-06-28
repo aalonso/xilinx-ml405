@@ -1,0 +1,7 @@
+setmode -bs
+setCable -p svf -file implementation/download.svf
+addDevice -p 1 -part xcf32p
+addDevice -p 2 -file implementation/download.bit
+addDevice -p 3 -part xc95144xl
+program -p 2
+quit

@@ -1,0 +1,7 @@
+INFILE=/home/aalonso/workspace/ppc405/xilinx-ml405-ref/implementation/system.ncd
+OUTFILE=/home/aalonso/workspace/ppc405/xilinx-ml405-ref/implementation/system.bit
+FAMILY=Virtex4
+PART=xc4vfx20-10ff672
+WORKINGDIR=/home/aalonso/workspace/ppc405/xilinx-ml405-ref/implementation
+LICENSE=ISE
+USER_INFO=174870101_177823121_0_348
